@@ -1,0 +1,43 @@
+name: Generate AdwaSport Sports Playlist
+
+on:
+  workflow_run:
+    workflows:
+      - "Merge CricHD Playlists"   # from Chdmarge.yml
+      - "Merge M3U"                # from M.yml
+      - "Update Playlist"          # from Pxl.yml
+      - "Update TVPass Playlist"   # from tvpass.yml
+    types:
+      - completed
+  schedule:
+    # Fallback: Run every hour at 15 minutes past the hour
+    - cron: '15 * * * *'
+  workflow_dispatch:               # Manual trigger
+
+jobs:
+  filter-sports:
+    runs-on: ubuntu-latest
+    # Only run if the triggering workflow succeeded, OR if triggered by schedule/manual
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run sports filter & validator
+        run: python process_sports.py
+
+      - name: Commit and push updated playlist
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add adwa_sports.m3u
+          git diff --quiet && git diff --staged --quiet || git commit -m "🔄 Auto-update adwa_sports.m3u [skip ci]"
+          git push
