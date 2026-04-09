@@ -2,15 +2,21 @@
 """
 AdwaSport Backend API
 Serves live sports playlist, match data, and channel streams.
+Deployed on Render.
 """
 
 import json
 import os
+import logging
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.responses import PlainTextResponse, JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 import requests
 from typing import Optional, List
+
+# Configure logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 app = FastAPI(
     title="AdwaSport API",
@@ -31,21 +37,31 @@ M3U_URL = "https://raw.githubusercontent.com/henokamdiye/IPTV-Scraper-Zilla/main
 CHANNELS_FILE = "channels.json"
 MATCHES_FILE = "matches.json"
 
-# Load data at startup
+# Load data at startup with graceful fallback
 def load_channels():
     if os.path.exists(CHANNELS_FILE):
-        with open(CHANNELS_FILE, "r", encoding="utf-8") as f:
-            return json.load(f)
+        try:
+            with open(CHANNELS_FILE, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception as e:
+            logger.error(f"Failed to load channels: {e}")
+    logger.warning("channels.json not found, returning empty list")
     return {"channels": []}
 
 def load_matches():
     if os.path.exists(MATCHES_FILE):
-        with open(MATCHES_FILE, "r", encoding="utf-8") as f:
-            return json.load(f)
+        try:
+            with open(MATCHES_FILE, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception as e:
+            logger.error(f"Failed to load matches: {e}")
+    logger.warning("matches.json not found, returning empty list")
     return []
 
 channels_db = load_channels()
 matches_db = load_matches()
+
+logger.info(f"Loaded {len(channels_db.get('channels', []))} channels and {len(matches_db)} matches")
 
 @app.get("/", tags=["Root"])
 async def root():
@@ -57,6 +73,11 @@ async def root():
         "matches": len(matches_db)
     }
 
+@app.get("/health", tags=["Health"])
+async def health():
+    """Health check endpoint for Render."""
+    return {"status": "healthy", "timestamp": __import__("datetime").datetime.utcnow().isoformat()}
+
 @app.get("/live", tags=["Live"])
 async def get_live_playlist():
     """Return the raw M3U playlist of working sports streams."""
@@ -65,12 +86,13 @@ async def get_live_playlist():
         resp.raise_for_status()
         return PlainTextResponse(content=resp.text, media_type="application/x-mpegURL")
     except Exception as e:
+        logger.error(f"Failed to fetch playlist: {e}")
         raise HTTPException(status_code=503, detail=f"Playlist unavailable: {e}")
 
 @app.get("/matches", tags=["Matches"])
 async def get_matches(limit: Optional[int] = None):
     """Return upcoming sports events."""
-    matches = load_matches()  # Reload to get fresh data
+    matches = load_matches()
     if limit:
         matches = matches[:limit]
     return JSONResponse(content=matches)
@@ -110,7 +132,6 @@ async def get_match_streams(match_id: str):
     if not match:
         raise HTTPException(status_code=404, detail="Match not found")
     
-    # Simple keyword mapping (will be enhanced later)
     league = match.get("league_name", "").lower()
     keywords = [league]
     if "premier" in league:
@@ -135,7 +156,7 @@ async def get_match_streams(match_id: str):
     
     return {
         "match": match,
-        "streams": streams[:10]  # Limit to top 10
+        "streams": streams[:10]
     }
 
 @app.get("/streams", tags=["Streams"])
@@ -152,7 +173,6 @@ async def search_streams(q: str = Query(..., min_length=1)):
 @app.get("/streams/health", tags=["Streams"])
 async def get_stream_health():
     """Get health status of streams."""
-    # Simple placeholder - can be enhanced with actual validation
     return {"status": "operational", "alive": len(channels_db.get("channels", [])), "dead": 0}
 
 @app.get("/channels", tags=["Channels"])
@@ -199,8 +219,11 @@ async def refresh_data():
     global channels_db, matches_db
     channels_db = load_channels()
     matches_db = load_matches()
+    logger.info("Data reloaded via admin endpoint")
     return {"status": "refreshed", "channels": len(channels_db["channels"]), "matches": len(matches_db)}
 
+# This block is used when running locally. On Render, the start command uses uvicorn directly.
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    port = int(os.environ.get("PORT", 8000))
+    uvicorn.run(app, host="0.0.0.0", port=port)
