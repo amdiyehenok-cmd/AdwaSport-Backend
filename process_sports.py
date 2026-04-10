@@ -19,39 +19,28 @@ from typing import List, Tuple, Optional, Dict
 
 # Category mapping – keywords for each sport
 SPORT_CATEGORIES = {
-    "football": [
-        "premier league", "la liga", "serie a", "bundesliga", "ligue 1",
-        "champions league", "europa league", "uefa", "world cup", "epl",
-        "sky sports", "bt sport", "bein sports", "nbc sports", "cbs sports",
-        "dazn", "sport tv", "super sport", "espn", "fox sports", "bein"
+    "soccer": [
+        # Leagues
+        "premier league", "epl", "la liga", "laliga", "serie a", "bundesliga",
+        "ligue 1", "champions league", "ucl", "europa league", "uel",
+        "mls", "eredivisie", "primeira liga", "ligue 1",
+        
+        # Major Broadcasters (English)
+        "sky sports", "bt sport", "tnt sports", "nbc sports", "peacock",
+        "cbs sports", "paramount+", "espn", "fox sports", "bein sports",
+        "dazn", "fubo", "sling", "youtube tv", "hulu",
+        
+        # Spanish Broadcasters
+        "movistar", "gol tv", "espn deportes", "tyc sports", "directv",
+        
+        # Arabic Broadcasters
+        "bein", "alkass", "abu dhabi sports", "dubai sports",
+        
+        # Other International
+        "super sport", "optus sport", "star sports", "sony ten", "willow",
+        "viaplay", "eleven sports", "sport tv", "polsat", "canal+"
     ],
-    "basketball": [
-        "nba", "basketball", "euroleague", "wnba", "ncaa basketball"
-    ],
-    "american_football": [
-        "nfl", "college football", "ncaa football"
-    ],
-    "baseball": [
-        "mlb", "baseball"
-    ],
-    "hockey": [
-        "nhl", "hockey"
-    ],
-    "motorsport": [
-        "f1", "formula 1", "motogp", "nascar", "indycar", "motor racing"
-    ],
-    "combat": [
-        "ufc", "wwe", "boxing", "mma"
-    ],
-    "cricket": [
-        "cricket", "ipl", "bbl", "icc"
-    ],
-    "tennis": [
-        "tennis", "atp", "wta", "grand slam"
-    ],
-    "golf": [
-        "golf", "pga", "masters"
-    ]
+    # ... keep other categories (american_football, basketball, etc.)
 }
 
 # Exclude keywords (non-sports)

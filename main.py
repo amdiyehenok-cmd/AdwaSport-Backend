@@ -1,43 +1,39 @@
 #!/usr/bin/env python3
 """
-AdwaSport Backend API – Premium Edition (Render‑Optimized)
-- Proper startup sequence for Render's health checks
-- Category filtering, deep stream metadata, dedicated sport endpoints
+AdwaSport Backend API – Godly Edition (Final)
+- Top 5 Leagues + UCL/UEL prioritized
+- Multi‑provider stream capture with relevance scoring
+- HLS manifest parsing for quality/language variants
+- Stream blacklist to filter non‑sports content
+- Fully automated deployment ready
 """
 
 import json
 import os
 import logging
 from typing import Optional, List, Dict, Any
+from contextlib import asynccontextmanager
 
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.responses import PlainTextResponse, JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 import requests
+import re
 
 # ---------- Logging ----------
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# ---------- FastAPI App ----------
-app = FastAPI(
-    title="AdwaSport API",
-    description="Premium sports streaming backend with category filters and deep stream validation",
-    version="2.0.0"
-)
-
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
-
 # ---------- Configuration ----------
-M3U_URL = "https://raw.githubusercontent.com/henokamdiye/IPTV-Scraper-Zilla/main/adwa_sports.m3u"
+M3U_URL = "https://raw.githubusercontent.com/amdiyehenok-cmd/AdwaSport-Backend/main/adwa_sports.m3u"
 CHANNELS_FILE = "channels.json"
 MATCHES_FILE = "matches.json"
 CATEGORY_FILE = "categorized_streams.json"
+
+# ---------- Global Data ----------
+channels_db = {"channels": []}
+matches_db = []
+categorized_db = {}
 
 # ---------- Safe Datetime Helpers ----------
 def utc_now():
@@ -47,7 +43,7 @@ def utc_now():
 def utc_now_iso():
     return utc_now().isoformat() + "Z"
 
-# ---------- Data Loading (eager) ----------
+# ---------- Data Loading ----------
 def load_channels() -> Dict[str, Any]:
     if os.path.exists(CHANNELS_FILE):
         try:
@@ -78,18 +74,69 @@ def load_categorized_streams() -> Dict[str, List[Dict]]:
     logger.warning("categorized_streams.json not found")
     return {}
 
-# Load data at module level (happens during import, before server starts)
-channels_db = load_channels()
-matches_db = load_matches()
-categorized_db = load_categorized_streams()
+# ---------- Lifespan (modern FastAPI startup/shutdown) ----------
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # Startup
+    global channels_db, matches_db, categorized_db
+    channels_db = load_channels()
+    matches_db = load_matches()
+    categorized_db = load_categorized_streams()
+    logger.info(f"🚀 AdwaSport Godly API started with {len(channels_db.get('channels', []))} channels, {len(matches_db)} matches, {len(categorized_db)} categories")
+    yield
+    # Shutdown (if needed)
+    logger.info("🛑 AdwaSport API shutting down")
 
-logger.info(f"Loaded {len(channels_db.get('channels', []))} channels, {len(matches_db)} matches, {len(categorized_db)} categories")
+# ---------- FastAPI App ----------
+app = FastAPI(
+    title="AdwaSport API",
+    description="Godly sports streaming backend with multi‑provider capture and HLS parsing",
+    version="3.0.0",
+    lifespan=lifespan,
+)
 
-# ---------- Startup Event (critical for Render) ----------
-@app.on_event("startup")
-async def startup_event():
-    """Log when the app is fully ready to serve traffic."""
-    logger.info("🚀 AdwaSport API is fully started and ready to accept requests")
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+# ---------- HLS Manifest Parser ----------
+def parse_hls_variants(master_url: str, timeout: int = 8) -> List[Dict]:
+    """
+    Fetch a master HLS playlist and extract variant streams with quality and bandwidth.
+    Returns a list of variant dicts: {url, resolution, bandwidth, codecs}
+    """
+    variants = []
+    try:
+        resp = requests.get(master_url, headers={"User-Agent": "Mozilla/5.0"}, timeout=timeout)
+        if resp.status_code != 200:
+            return variants
+        lines = resp.text.splitlines()
+        i = 0
+        while i < len(lines):
+            line = lines[i].strip()
+            if line.startswith("#EXT-X-STREAM-INF"):
+                bandwidth = re.search(r'BANDWIDTH=(\d+)', line)
+                resolution = re.search(r'RESOLUTION=(\d+x\d+)', line)
+                codecs = re.search(r'CODECS="([^"]+)"', line)
+                i += 1
+                if i < len(lines) and not lines[i].startswith('#'):
+                    variant_url = lines[i].strip()
+                    if not variant_url.startswith('http'):
+                        from urllib.parse import urljoin
+                        variant_url = urljoin(master_url, variant_url)
+                    variants.append({
+                        "url": variant_url,
+                        "bandwidth": int(bandwidth.group(1)) if bandwidth else None,
+                        "resolution": resolution.group(1) if resolution else None,
+                        "codecs": codecs.group(1) if codecs else None
+                    })
+            i += 1
+    except Exception as e:
+        logger.warning(f"HLS parsing failed for {master_url}: {e}")
+    return variants
 
 # ---------- Helper Functions ----------
 def get_streams_by_category(category: str) -> List[Dict]:
@@ -117,7 +164,7 @@ def filter_streams_by_quality(streams: List[Dict], min_height: int) -> List[Dict
 async def root():
     return {
         "name": "AdwaSport API",
-        "version": "2.0.0",
+        "version": "3.0.0",
         "status": "online",
         "channels": len(channels_db.get("channels", [])),
         "matches": len(matches_db),
@@ -127,7 +174,6 @@ async def root():
 
 @app.get("/health", tags=["Health"])
 async def health():
-    """Ultra-lightweight health check for Render."""
     return {"status": "healthy", "timestamp": utc_now_iso()}
 
 # ---------- Live Playlist ----------
@@ -141,7 +187,7 @@ async def get_live_playlist():
         logger.error(f"Failed to fetch playlist: {e}")
         raise HTTPException(status_code=503, detail=f"Playlist unavailable: {e}")
 
-# ---------- Matches ----------
+# ---------- Matches (Basic) ----------
 @app.get("/matches", tags=["Matches"])
 async def get_matches(limit: Optional[int] = None):
     matches = load_matches()
@@ -174,41 +220,97 @@ async def get_match_details(match_id: str):
             return m
     raise HTTPException(status_code=404, detail="Match not found")
 
+# ---------- GODLY MATCH-STREAM ENGINE ----------
+# Blacklist to filter out non‑sports channels
+STREAM_BLACKLIST = [
+    "fireplace", "vibes", "replay", "music", "kids", "cooking", "travel",
+    "nature", "relax", "ambient", "meditation", "yoga", "pet", "aquarium"
+]
+
 @app.get("/matches/{match_id}/streams", tags=["Matches"])
-async def get_match_streams(match_id: str):
+async def get_match_streams(match_id: str, parse_hls: bool = False):
+    """
+    Returns streams for a match, ranked by relevance.
+    Optionally parses HLS master playlists to return quality variants.
+    """
     matches = load_matches()
     match = next((m for m in matches if m.get("idEvent") == match_id), None)
     if not match:
         raise HTTPException(status_code=404, detail="Match not found")
     
     league = match.get("league_name", "").lower()
+    home = match.get("strHomeTeam", "").lower()
+    away = match.get("strAwayTeam", "").lower()
+    
+    # Expanded keyword mapping for top leagues
     keywords = []
     if "premier" in league:
-        keywords = ["premier", "epl", "sky sports", "nbc"]
-    elif "champions" in league:
-        keywords = ["champions", "ucl", "bt sport", "cbs"]
+        keywords = ["premier", "epl", "sky sports", "bt sport", "nbc", "peacock", "usa network"]
     elif "la liga" in league:
-        keywords = ["la liga", "laliga", "bein", "espn"]
-    elif "nba" in league:
-        keywords = ["nba", "basketball"]
+        keywords = ["la liga", "laliga", "bein", "espn", "movistar", "dazn", "gol tv"]
+    elif "serie a" in league:
+        keywords = ["serie a", "seriea", "paramount", "cbs", "bein", "dazn", "espn"]
+    elif "bundesliga" in league:
+        keywords = ["bundesliga", "espn", "sky sports", "dazn", "viaplay"]
+    elif "ligue 1" in league:
+        keywords = ["ligue 1", "ligue1", "bein", "canal+", "dazn", "fubo"]
+    elif "champions" in league:
+        keywords = ["champions", "ucl", "bt sport", "cbs", "dazn", "paramount", "bein", "canal+"]
+    elif "europa" in league:
+        keywords = ["europa", "uel", "bt sport", "dazn", "paramount"]
     else:
         keywords = [league]
     
-    candidate_streams = []
-    for cat_streams in categorized_db.values():
-        for s in cat_streams:
-            if any(kw in s["name"].lower() for kw in keywords):
-                candidate_streams.append({
-                    "id": s.get("id"),
-                    "name": s.get("name"),
-                    "logo": s.get("logo"),
-                    "url": s.get("url"),
-                    "quality": s.get("resolution", "HD"),
-                    "bitrate": s.get("bitrate"),
-                    "latency_ms": s.get("latency_ms")
-                })
+    # Add team names to catch team‑specific feeds
+    keywords.append(home)
+    keywords.append(away)
     
-    return {"match": match, "streams": candidate_streams[:10]}
+    candidate_streams = []
+    soccer_streams = categorized_db.get("soccer", [])
+    
+    for stream in soccer_streams:
+        stream_name = stream.get("name", "").lower()
+        # Apply blacklist
+        if any(bad in stream_name for bad in STREAM_BLACKLIST):
+            continue
+        
+        score = sum(1 for kw in keywords if kw in stream_name)
+        if score > 0:
+            base_stream = {
+                "score": score,
+                "id": stream.get("id"),
+                "name": stream.get("name"),
+                "logo": stream.get("logo"),
+                "url": stream.get("url"),
+                "quality": stream.get("resolution", "HD"),
+                "bitrate": stream.get("bitrate"),
+                "latency_ms": stream.get("latency_ms")
+            }
+            
+            if parse_hls and stream.get("url", "").endswith(".m3u8"):
+                variants = parse_hls_variants(stream["url"])
+                if variants:
+                    for v in variants:
+                        variant_stream = base_stream.copy()
+                        variant_stream["url"] = v["url"]
+                        variant_stream["quality"] = v.get("resolution", base_stream["quality"])
+                        variant_stream["bitrate"] = v.get("bandwidth")
+                        candidate_streams.append(variant_stream)
+                else:
+                    candidate_streams.append(base_stream)
+            else:
+                candidate_streams.append(base_stream)
+    
+    # Sort by relevance score (descending)
+    candidate_streams.sort(key=lambda x: x.get("score", 0), reverse=True)
+    for s in candidate_streams:
+        s.pop("score", None)
+    
+    return {
+        "match": match,
+        "streams": candidate_streams[:20],
+        "total_available": len(candidate_streams)
+    }
 
 # ---------- Streams & Categories (Premium) ----------
 @app.get("/streams", tags=["Streams"])
@@ -251,9 +353,9 @@ async def get_live_streams(
     
     return {"streams": streams, "count": len(streams)}
 
-@app.get("/api/football-streams", tags=["Premium"])
-async def get_football_streams(quality: Optional[str] = None):
-    streams = get_streams_by_category("football")
+@app.get("/api/soccer-streams", tags=["Premium"])
+async def get_soccer_streams(quality: Optional[str] = None):
+    streams = get_streams_by_category("soccer")
     if quality:
         try:
             min_h = int(quality)
@@ -314,36 +416,6 @@ async def get_stream_details(stream_id: str):
             if s.get("id") == stream_id:
                 return s
     raise HTTPException(status_code=404, detail="Stream not found")
-
-@app.get("/api/streams/health/deep", tags=["Admin"])
-async def deep_health_check():
-    return {"status": "Deep validation would be triggered here"}
-
-@app.get("/api/matches/with-streams", tags=["Premium"])
-async def get_matches_with_streams():
-    matches = load_matches()
-    result = []
-    for m in matches:
-        league = m.get("league_name", "").lower()
-        keywords = []
-        if "premier" in league:
-            keywords = ["premier", "epl", "sky", "nbc"]
-        elif "champions" in league:
-            keywords = ["champions", "ucl"]
-        elif "nba" in league:
-            keywords = ["nba"]
-        else:
-            keywords = [league]
-        
-        available = []
-        for s in categorized_db.get("football", []) + categorized_db.get("basketball", []):
-            if any(kw in s["name"].lower() for kw in keywords):
-                available.append({"id": s.get("id"), "name": s["name"], "url": s["url"]})
-        if available:
-            m_copy = m.copy()
-            m_copy["available_streams"] = available[:3]
-            result.append(m_copy)
-    return result
 
 # ---------- Channels & Leagues ----------
 @app.get("/channels", tags=["Channels"])
