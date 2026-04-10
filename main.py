@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
 """
 AdwaSport Backend API – Godly Edition (Final)
-- Top 5 Leagues + UCL/UEL prioritized
+- Uses real league names from strLeague
+- Blacklists non‑sports channels
 - Multi‑provider stream capture with relevance scoring
-- HLS manifest parsing for quality/language variants
-- Stream blacklist to filter non‑sports content
-- Fully automated deployment ready
+- HLS manifest parsing for quality variants
 """
 
 import json
@@ -74,17 +73,15 @@ def load_categorized_streams() -> Dict[str, List[Dict]]:
     logger.warning("categorized_streams.json not found")
     return {}
 
-# ---------- Lifespan (modern FastAPI startup/shutdown) ----------
+# ---------- Lifespan ----------
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    # Startup
     global channels_db, matches_db, categorized_db
     channels_db = load_channels()
     matches_db = load_matches()
     categorized_db = load_categorized_streams()
     logger.info(f"🚀 AdwaSport Godly API started with {len(channels_db.get('channels', []))} channels, {len(matches_db)} matches, {len(categorized_db)} categories")
     yield
-    # Shutdown (if needed)
     logger.info("🛑 AdwaSport API shutting down")
 
 # ---------- FastAPI App ----------
@@ -104,10 +101,6 @@ app.add_middleware(
 
 # ---------- HLS Manifest Parser ----------
 def parse_hls_variants(master_url: str, timeout: int = 8) -> List[Dict]:
-    """
-    Fetch a master HLS playlist and extract variant streams with quality and bandwidth.
-    Returns a list of variant dicts: {url, resolution, bandwidth, codecs}
-    """
     variants = []
     try:
         resp = requests.get(master_url, headers={"User-Agent": "Mozilla/5.0"}, timeout=timeout)
@@ -221,7 +214,6 @@ async def get_match_details(match_id: str):
     raise HTTPException(status_code=404, detail="Match not found")
 
 # ---------- GODLY MATCH-STREAM ENGINE ----------
-# Blacklist to filter out non‑sports channels
 STREAM_BLACKLIST = [
     "fireplace", "vibes", "replay", "music", "kids", "cooking", "travel",
     "nature", "relax", "ambient", "meditation", "yoga", "pet", "aquarium"
@@ -229,20 +221,17 @@ STREAM_BLACKLIST = [
 
 @app.get("/matches/{match_id}/streams", tags=["Matches"])
 async def get_match_streams(match_id: str, parse_hls: bool = False):
-    """
-    Returns streams for a match, ranked by relevance.
-    Optionally parses HLS master playlists to return quality variants.
-    """
     matches = load_matches()
     match = next((m for m in matches if m.get("idEvent") == match_id), None)
     if not match:
         raise HTTPException(status_code=404, detail="Match not found")
     
-    league = match.get("league_name", "").lower()
+    # ✅ Use the real league name from strLeague
+    league = match.get("strLeague", "").lower()
     home = match.get("strHomeTeam", "").lower()
     away = match.get("strAwayTeam", "").lower()
     
-    # Expanded keyword mapping for top leagues
+    # Build keywords based on the actual league
     keywords = []
     if "premier" in league:
         keywords = ["premier", "epl", "sky sports", "bt sport", "nbc", "peacock", "usa network"]
@@ -261,7 +250,6 @@ async def get_match_streams(match_id: str, parse_hls: bool = False):
     else:
         keywords = [league]
     
-    # Add team names to catch team‑specific feeds
     keywords.append(home)
     keywords.append(away)
     
@@ -301,7 +289,6 @@ async def get_match_streams(match_id: str, parse_hls: bool = False):
             else:
                 candidate_streams.append(base_stream)
     
-    # Sort by relevance score (descending)
     candidate_streams.sort(key=lambda x: x.get("score", 0), reverse=True)
     for s in candidate_streams:
         s.pop("score", None)
