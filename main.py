@@ -2,6 +2,7 @@
 """
 AdwaSport Backend API – Godly Edition (Final)
 - Uses real league names from strLeague
+- Aggressive keyword matching for maximum stream coverage
 - Blacklists non‑sports channels
 - Multi‑provider stream capture with relevance scoring
 - HLS manifest parsing for quality variants
@@ -225,43 +226,49 @@ async def get_match_streams(match_id: str, parse_hls: bool = False):
     match = next((m for m in matches if m.get("idEvent") == match_id), None)
     if not match:
         raise HTTPException(status_code=404, detail="Match not found")
-    
+
     # ✅ Use the real league name from strLeague
     league = match.get("strLeague", "").lower()
     home = match.get("strHomeTeam", "").lower()
     away = match.get("strAwayTeam", "").lower()
-    
-    # Build keywords based on the actual league
-    keywords = []
-    if "premier" in league:
-        keywords = ["premier", "epl", "sky sports", "bt sport", "nbc", "peacock", "usa network"]
-    elif "la liga" in league:
-        keywords = ["la liga", "laliga", "bein", "espn", "movistar", "dazn", "gol tv"]
-    elif "serie a" in league:
-        keywords = ["serie a", "seriea", "paramount", "cbs", "bein", "dazn", "espn"]
-    elif "bundesliga" in league:
-        keywords = ["bundesliga", "espn", "sky sports", "dazn", "viaplay"]
-    elif "ligue 1" in league:
-        keywords = ["ligue 1", "ligue1", "bein", "canal+", "dazn", "fubo"]
-    elif "champions" in league:
-        keywords = ["champions", "ucl", "bt sport", "cbs", "dazn", "paramount", "bein", "canal+"]
-    elif "europa" in league:
-        keywords = ["europa", "uel", "bt sport", "dazn", "paramount"]
-    else:
-        keywords = [league]
-    
+
+    # 🔥 AGGRESSIVE FALLBACK: Always include major sports networks
+    keywords = ["sport", "espn", "fox", "nbc", "sky", "bein", "dazn", "premier", "league"]
+
+    # Add league‑specific boosts
+    if "premier" in league or "league 1" in league:
+        keywords.extend(["premier", "epl", "sky sports", "bt sport", "nbc", "peacock", "usa network"])
+    if "la liga" in league:
+        keywords.extend(["la liga", "laliga", "bein", "espn", "movistar", "dazn", "gol tv"])
+    if "serie a" in league:
+        keywords.extend(["serie a", "seriea", "paramount", "cbs", "bein", "dazn", "espn"])
+    if "bundesliga" in league:
+        keywords.extend(["bundesliga", "espn", "sky sports", "dazn", "viaplay"])
+    if "ligue 1" in league:
+        keywords.extend(["ligue 1", "ligue1", "bein", "canal+", "dazn", "fubo"])
+    if "champions" in league:
+        keywords.extend(["champions", "ucl", "bt sport", "cbs", "dazn", "paramount", "bein", "canal+"])
+    if "europa" in league:
+        keywords.extend(["europa", "uel", "bt sport", "dazn", "paramount"])
+
+    # Add team names
     keywords.append(home)
     keywords.append(away)
-    
+
+    # Remove duplicates
+    keywords = list(set(keywords))
+
     candidate_streams = []
     soccer_streams = categorized_db.get("soccer", [])
-    
+
     for stream in soccer_streams:
         stream_name = stream.get("name", "").lower()
-        # Apply blacklist
+
+        # Skip obvious non‑sports
         if any(bad in stream_name for bad in STREAM_BLACKLIST):
             continue
-        
+
+        # Score by keyword matches
         score = sum(1 for kw in keywords if kw in stream_name)
         if score > 0:
             base_stream = {
@@ -274,7 +281,7 @@ async def get_match_streams(match_id: str, parse_hls: bool = False):
                 "bitrate": stream.get("bitrate"),
                 "latency_ms": stream.get("latency_ms")
             }
-            
+
             if parse_hls and stream.get("url", "").endswith(".m3u8"):
                 variants = parse_hls_variants(stream["url"])
                 if variants:
@@ -288,11 +295,12 @@ async def get_match_streams(match_id: str, parse_hls: bool = False):
                     candidate_streams.append(base_stream)
             else:
                 candidate_streams.append(base_stream)
-    
+
+    # Sort by score descending
     candidate_streams.sort(key=lambda x: x.get("score", 0), reverse=True)
     for s in candidate_streams:
         s.pop("score", None)
-    
+
     return {
         "match": match,
         "streams": candidate_streams[:20],
@@ -327,17 +335,17 @@ async def get_live_streams(
         streams = []
         for cat_streams in categorized_db.values():
             streams.extend(cat_streams)
-    
+
     if quality:
         try:
             min_h = int(quality)
             streams = filter_streams_by_quality(streams, min_h)
         except ValueError:
             raise HTTPException(status_code=400, detail="Quality must be an integer (e.g., 720)")
-    
+
     if limit:
         streams = streams[:limit]
-    
+
     return {"streams": streams, "count": len(streams)}
 
 @app.get("/api/soccer-streams", tags=["Premium"])
