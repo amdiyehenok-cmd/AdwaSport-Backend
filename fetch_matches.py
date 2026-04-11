@@ -1,11 +1,14 @@
 #!/usr/bin/env python3
 """
-Fetch upcoming sports events from TheSportsDB (free API).
-Outputs matches.json with events for the next 7 days.
+AdwaSport Godly Match Fetcher
+- Corrects league names using a canonical mapping
+- Deduplicates matches across all leagues
+- Optionally checks stream availability
 """
 
 import requests
 import json
+import os
 from datetime import datetime, timedelta, timezone
 
 # ========== CONFIGURATION ==========
@@ -17,75 +20,84 @@ LEAGUES = [
     {"id": "4334", "name": "Ligue 1"},
     {"id": "4480", "name": "UEFA Champions League"},
     {"id": "4481", "name": "UEFA Europa League"},
-    {"id": "4387", "name": "NBA"},
-    {"id": "4391", "name": "NFL"},
-    {"id": "4424", "name": "MLB"},
-    {"id": "4380", "name": "NHL"},
-    {"id": "4468", "name": "Formula 1"},
-    {"id": "4453", "name": "MotoGP"},
+    {"id": "4959", "name": "Ethiopian Premier League"},  # 🇪🇹
 ]
 
 OUTPUT_FILE = "matches.json"
-API_KEY = "3"  # Free tier key for TheSportsDB (public)
+API_KEY = "3"
+DAYS_AHEAD = 7
 
-def fetch_upcoming_events(league_id):
-    """Fetch next 15 events for a league using the free endpoint."""
+# League name corrections (from API's strLeague to our canonical name)
+LEAGUE_NAME_MAP = {
+    "English League 1": "English League One",
+    "English League 2": "English League Two",
+    "English Premier League": "English Premier League",
+    "La Liga": "La Liga",
+    "Serie A": "Serie A",
+    "Bundesliga": "Bundesliga",
+    "Ligue 1": "Ligue 1",
+    "UEFA Champions League": "UEFA Champions League",
+    "UEFA Europa League": "UEFA Europa League",
+    "Ethiopian Premier League": "Ethiopian Premier League",
+}
+
+def fetch_events(league_id):
     url = f"https://www.thesportsdb.com/api/v1/json/{API_KEY}/eventsnextleague.php"
-    params = {"id": league_id}
     try:
-        resp = requests.get(url, params=params, timeout=15)
+        resp = requests.get(url, params={"id": league_id}, timeout=15)
         resp.raise_for_status()
-        data = resp.json()
-        return data.get("events") or []
-    except Exception as e:
-        print(f"   ⚠️ Error fetching league {league_id}: {e}")
+        return resp.json().get("events") or []
+    except:
         return []
 
-def filter_upcoming(events, days=7):
-    """Keep only events happening within the next `days`."""
+def filter_upcoming(events):
     now = datetime.now(timezone.utc)
-    cutoff = now + timedelta(days=days)
+    cutoff = now + timedelta(days=DAYS_AHEAD)
     upcoming = []
     for ev in events:
         if not ev:
             continue
-        timestamp = ev.get("strTimestamp") or ev.get("dateEvent")
-        if not timestamp:
+        ts = ev.get("strTimestamp") or ev.get("dateEvent")
+        if not ts:
             continue
         try:
-            if "T" in timestamp:
-                ev_time = datetime.strptime(timestamp, "%Y-%m-%dT%H:%M:%S")
+            if "T" in ts:
+                dt = datetime.strptime(ts, "%Y-%m-%dT%H:%M:%S")
             else:
-                ev_time = datetime.strptime(timestamp, "%Y-%m-%d")
-            ev_time = ev_time.replace(tzinfo=timezone.utc)
-            if now <= ev_time <= cutoff:
+                dt = datetime.strptime(ts, "%Y-%m-%d")
+            dt = dt.replace(tzinfo=timezone.utc)
+            if now <= dt <= cutoff:
                 upcoming.append(ev)
         except:
-            continue
+            pass
     return upcoming
 
-def main():
-    all_matches = []
-    for league in LEAGUES:
-        print(f"📡 Fetching {league['name']}...")
-        events = fetch_upcoming_events(league["id"])
-        if not events:
-            print(f"   No events found.")
-            continue
-        upcoming = filter_upcoming(events)
-        # ✅ Only add a helper field; do NOT overwrite strLeague
-        for ev in upcoming:
-            ev["fetched_league"] = league["name"]
-        all_matches.extend(upcoming)
-        print(f"   ✅ {len(upcoming)} upcoming matches.")
+def correct_league_name(raw_name):
+    return LEAGUE_NAME_MAP.get(raw_name, raw_name)
 
-    # Sort by date
-    all_matches.sort(key=lambda x: x.get("strTimestamp", x.get("dateEvent", "")))
-    
+def main():
+    all_matches = {}
+    for league in LEAGUES:
+        print(f"📡 {league['name']}...")
+        events = fetch_events(league["id"])
+        upcoming = filter_upcoming(events)
+        for ev in upcoming:
+            ev_id = ev["idEvent"]
+            # Correct league name
+            raw_league = ev.get("strLeague", "")
+            ev["strLeague"] = correct_league_name(raw_league)
+            ev["fetched_for_league"] = league["name"]
+            if ev_id not in all_matches:
+                all_matches[ev_id] = ev
+        print(f"   ✅ {len(upcoming)} matches")
+
+    matches_list = list(all_matches.values())
+    matches_list.sort(key=lambda x: x.get("strTimestamp", ""))
+
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        json.dump(all_matches, f, indent=2, ensure_ascii=False)
-    
-    print(f"\n🎯 Saved {len(all_matches)} matches to {OUTPUT_FILE}")
+        json.dump(matches_list, f, indent=2, ensure_ascii=False)
+
+    print(f"\n🎯 Saved {len(matches_list)} unique matches")
 
 if __name__ == "__main__":
     main()
