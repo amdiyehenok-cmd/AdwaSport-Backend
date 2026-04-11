@@ -1,0 +1,23 @@
+name: Update Match Data
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'   # Every 30 minutes
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests
+      - run: python fetch_matches.py
+      - run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add matches.json
+          git diff --quiet || git commit -m "📅 Auto-update match fixtures [skip ci]"
+          git push
