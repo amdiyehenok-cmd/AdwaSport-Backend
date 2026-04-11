@@ -1,326 +1,11 @@
 {
   "channels": [
     {
-      "id": "99951180",
-      "name": "Strongman Champions League",
-      "logo": "https://image.xumo.com/v1/channels/channel/99951180/168x168.png?type=color_onBlack",
-      "group": "xumo_playlist",
-      "url": "https://dbrb49pjoymg4.cloudfront.net/10001/99951180/hls/playlist.m3u8?ads.xumo_channelId=99951180&ads._fw_ifa_type=&ads._fw_did=2281509d-7183-4449-ac61-ea451362d6c2&ads.amznappId=&ads.lat=&ads.lon=&ads.os=&ads.osv=&ads.asnw=&ads.caid=RightsBoosterStrongmanChamp&ads.csid=xumo_web_RightsBoosterStrongmanChamp_ssai&ads._fw_is_lat=0&ads._fw_us_privacy=&ads._fw_coppa=0&ads.genre=Sport,Sports,SA,SC,SE,SN&ads._fw_content_category=&ads._fw_content_language=en&ads._fw_content_genre=Sport,Sports,SA,SC,SE,SN&ads._fw_content_rating=&ads.xumo_contentId=3808&ads.xumo_contentName=RightsBoosterStrongmanChamp&ads.xumo_providerId=3808&ads.xumo_providerName=RightsBoosterStrongmanChamp&ads._fw_deviceMake=GitHubAction&ads._fw_device_model=PythonScript&ads.channelId=99951180&ads.xumo_platform=web&ads.site_id=&ads.appName=xumo&ads.appVersion=1.0.0&ads._fw_app_bundle=web.xumo.com&ads._fw_app_store_url="
-    },
-    {
-      "id": "99951383",
-      "name": "The NBA Channel",
-      "logo": "https://image.xumo.com/v1/channels/channel/99951383/168x168.png?type=color_onBlack",
-      "group": "xumo_playlist",
-      "url": "https://dbrb49pjoymg4.cloudfront.net/10001/99951383/hls/playlist.m3u8?ads.xumo_channelId=99951383&ads._fw_ifa_type=&ads._fw_did=872739bf-7a0d-4038-9e5f-e871baac28aa&ads.amznappId=&ads.lat=&ads.lon=&ads.os=&ads.osv=&ads.asnw=&ads.caid=NBAFASTChannel&ads.csid=xumo_web_NBAFASTChannel_ssai&ads._fw_is_lat=0&ads._fw_us_privacy=&ads._fw_coppa=0&ads.genre=Sport,Sports,SA,SC,SE,SN&ads._fw_content_category=&ads._fw_content_language=en&ads._fw_content_genre=Sport,Sports,SA,SC,SE,SN&ads._fw_content_rating=&ads.xumo_contentId=4185&ads.xumo_contentName=NBAFASTChannel&ads.xumo_providerId=4185&ads.xumo_providerName=NBAFASTChannel&ads._fw_deviceMake=GitHubAction&ads._fw_device_model=PythonScript&ads.channelId=99951383&ads.xumo_platform=web&ads.site_id=&ads.appName=xumo&ads.appVersion=1.0.0&ads._fw_app_bundle=web.xumo.com&ads._fw_app_store_url="
-    },
-    {
-      "id": "99951469",
-      "name": "HBO Boxing",
-      "logo": "https://image.xumo.com/v1/channels/channel/99951469/168x168.png?type=color_onBlack",
-      "group": "xumo_playlist",
-      "url": "https://dbrb49pjoymg4.cloudfront.net/10001/99951469/hls/playlist.m3u8?ads.xumo_channelId=99951469&ads.xumo_streamId=99951469&ads.channelId=99951469&ads.channelName=WBDHBOBoxing_us&ads.caid=WBDHBOBoxing&ads.csid=xumo_web_WBDHBOBoxing_ssai&ads._fw_coppa=0&ads.xumo_contentId=4315&ads.xumo_contentName=WBDHBOBoxing&ads.xumo_providerId=4315&ads.xumo_providerName=WBDHBOBoxing&ads._fw_ifa_type=&ads._fw_did=241d283b-847f-489f-b05c-93897590ac14&ads.amznappId=&ads.lat=&ads.lon=&ads.os=&ads.osv=&ads._fw_is_lat=0&ads._fw_us_privacy=&ads.genre=Sport,Sports,SA,SC,SE,SN&ads._fw_content_category=&ads._fw_content_language=en&ads._fw_content_genre=Sport,Sports,SA,SC,SE,SN&ads._fw_content_rating=&ads._fw_deviceMake=GitHubAction&ads._fw_device_model=PythonScript&ads.xumo_platform=web&ads.site_id=&ads.appVersion=1.0.0&ads._fw_app_bundle=web.xumo.com&ads._fw_app_store_url=&ads.appName=XumoPlay"
-    },
-    {
       "id": "99991387",
       "name": "beIN SPORTS XTRA",
       "logo": "https://image.xumo.com/v1/channels/channel/99991387/168x168.png?type=color_onBlack",
       "group": "xumo_playlist",
       "url": "https://bein-xtra-xumo.amagi.tv/hls/amagi_hls_data_beinAAAAA-bein-xtra-xumoA/CDN/master.m3u8?is_lat=0&us_privacy="
-    },
-    {
-      "id": "99991278",
-      "name": "GLORY Kickboxing",
-      "logo": "https://image.xumo.com/v1/channels/channel/99991278/168x168.png?type=color_onBlack",
-      "group": "xumo_playlist",
-      "url": "https://dbrb49pjoymg4.cloudfront.net/10001/99991278/hls/playlist.m3u8?ads.xumo_channelId=99991278&ads._fw_ifa_type=&ads._fw_did=0094c8b4-1a51-4757-8143-7afcf3473cad&ads.amznappId=&ads.lat=&ads.lon=&ads.os=&ads.osv=&ads.asnw=&ads.caid=Glory&ads.csid=xumo_web_Glory_ssai&ads._fw_is_lat=0&ads._fw_us_privacy=&ads._fw_coppa=0&ads.genre=Sport,Sports,SA,SC,SE,SN&ads._fw_content_category=&ads._fw_content_language=en&ads._fw_content_genre=Sport,Sports,SA,SC,SE,SN&ads._fw_content_rating=&ads.xumo_contentId=203&ads.xumo_contentName=Glory&ads.xumo_providerId=203&ads.xumo_providerName=Glory&ads._fw_deviceMake=GitHubAction&ads._fw_device_model=PythonScript&ads.channelId=99991278&ads.xumo_platform=web&ads.site_id=&ads.appName=xumo&ads.appVersion=1.0.0&ads._fw_app_bundle=web.xumo.com&ads._fw_app_store_url="
-    },
-    {
-      "id": "99951462",
-      "name": "GOLFPASS",
-      "logo": "https://image.xumo.com/v1/channels/channel/99951462/168x168.png?type=color_onBlack",
-      "group": "xumo_playlist",
-      "url": "https://d4whmvwm0rdvi.cloudfront.net/10007/99951462/hls/master.m3u8?ads.xumo_channelId=99951462&ads.asnw=535279&ads.afid=440667964&ads.sfid=23817285&ads.csid=xumo_web_versantgolfpass_ssai_cro&ads._fw_is_lat=0&ads._fw_us_privacy=&ads._fw_coppa=0&ads._fw_did=0b043eb5-db15-4218-93f0-a05960495ec1&ads._fw_vcid2=512116:0b043eb5-db15-4218-93f0-a05960495ec1&ads._fw_app_bundle=web.xumo.com&ads._fw_app_store_url=&ads._fw_content_category=&ads._fw_content_genre=Sport,Sports,SA,SC,SE,SN&ads._fw_content_language=en&ads._fw_content_rating=&ads._fw_deviceMake=GitHubAction&ads._fw_device_model=PythonScript&ads._fw_deviceType=3-Connected_TV&ads.appVersion=1.0.0&ads.appName=xumoplay&ads.xumo_contentId=4292&ads.xumo_contentName=VersantGOLFPASS&ads.xumo_providerId=4292&ads.xumo_providerName=VersantGOLFPASS&ads.channelId=99951462&ads._fw_ifa_type="
-    },
-    {
-      "id": "99951253",
-      "name": "NBC Sports NOW",
-      "logo": "https://image.xumo.com/v1/channels/channel/99951253/168x168.png?type=color_onBlack",
-      "group": "xumo_playlist",
-      "url": "https://d4whmvwm0rdvi.cloudfront.net/10007/99951253/hls/master.m3u8?ads.xumo_channelId=99951253&ads.asnw=169843&ads.afid=380753925&ads.sfid=19208128&ads.csid=xumo_web_NBCUSports_ssai_cro&ads._fw_is_lat=0&ads._fw_us_privacy=&ads._fw_coppa=0&ads._fw_did=1bfbda7a-8998-4358-9568-a10e41eeae39&ads._fw_vcid2=512116:1bfbda7a-8998-4358-9568-a10e41eeae39&ads._fw_app_bundle=web.xumo.com&ads._fw_app_store_url=&ads._fw_content_category=&ads._fw_content_genre=Sport,Sports,SA,SC,SE,SN&ads._fw_content_language=en&ads._fw_content_rating=&ads._fw_deviceMake=GitHubAction&ads._fw_device_model=PythonScript&ads._fw_deviceType=3-Connected_TV&ads.appVersion=1.0.0&ads.appName=XumoPlay&ads.xumo_contentId=3929&ads.xumo_contentName=NBCUSports&ads.xumo_providerId=3929&ads.xumo_providerName=NBCUSports&ads.channelId=99951253&ads._fw_ifa_type="
-    },
-    {
-      "id": "99991196",
-      "name": "FOX Sports",
-      "logo": "https://image.xumo.com/v1/channels/channel/99991196/168x168.png?type=color_onBlack",
-      "group": "xumo_playlist",
-      "url": "https://dbrb49pjoymg4.cloudfront.net/10001/99991196/hls/xumo.m3u8?ads.xumo_channelId=99991196&ads._fw_ifa_type=&ads._fw_did=725c7ad8-132a-4ea0-a771-904f040a8784&ads.amznappId=&ads.lat=&ads.lon=&ads.os=&ads.osv=&ads.asnw=&ads.caid=FoxSports&ads.csid=xumo_web_FoxSports_ssai&ads._fw_is_lat=0&ads._fw_us_privacy=&ads._fw_coppa=0&ads.genre=Sport,Sports,SA,SC,SE,SN&ads._fw_content_category=&ads._fw_content_language=en&ads._fw_content_genre=Sport,Sports,SA,SC,SE,SN&ads._fw_content_rating=&ads.xumo_contentId=142&ads.xumo_contentName=FoxSports&ads.xumo_providerId=142&ads.xumo_providerName=FoxSports&ads._fw_deviceMake=GitHubAction&ads._fw_device_model=PythonScript&ads.channelId=99991196&ads.xumo_platform=web&ads.site_id=&ads.appName=xumo&ads.appVersion=1.0.0&ads._fw_app_bundle=web.xumo.com&ads._fw_app_store_url="
-    },
-    {
-      "id": "99991738",
-      "name": "NFL Channel",
-      "logo": "https://image.xumo.com/v1/channels/channel/99991738/168x168.png?type=color_onBlack",
-      "group": "xumo_playlist",
-      "url": "https://c300.play.lura.app/play/v1/live/ZHx8AbT0xVvm1el0epd7vw/master.m3u8?ts=1668459044045&app=Mp8DA1vKVAoO4yHJ0QFZ3w&exp=2299179044&auth=8HJTwR6prnzFjGE2Ki_8pfvwxMRvWtSwRm3R54TN3_w&PlatformChild=&usprivacy=&coppa=0&autoplay=auto&videomute=0&encoder=DC1-XUMO&fwDid=29b71b3f-092e-4c7c-a3c7-91dd4bdf7804&tmsid=121705&palnonce=&rdid=29b71b3f-092e-4c7c-a3c7-91dd4bdf7804&islat=0&atts=&attmas=&idfv=&screenw=1920&screenh=1080&title="
-    },
-    {
-      "id": "99951406",
-      "name": "Willow Sports",
-      "logo": "https://image.xumo.com/v1/channels/channel/99951406/168x168.png?type=color_onBlack",
-      "group": "xumo_playlist",
-      "url": "https://dbrb49pjoymg4.cloudfront.net/10001/99951406/hls/playlist.m3u8?ads.xumo_channelId=99951406&ads._fw_ifa_type=&ads._fw_did=1a4a05a4-cc36-4b7c-9008-7d96cf0056bb&ads.amznappId=&ads.lat=&ads.lon=&ads.os=&ads.osv=&ads.asnw=&ads.caid=TimesInternetWillowPlus&ads.csid=xumo_web_TimesInternetWillowPlus_ssai&ads._fw_is_lat=0&ads._fw_us_privacy=&ads._fw_coppa=0&ads.genre=Sport,Sports,SA,SC,SE,SN&ads._fw_content_category=&ads._fw_content_language=en&ads._fw_content_genre=Sport,Sports,SA,SC,SE,SN&ads._fw_content_rating=&ads.xumo_contentId=4219&ads.xumo_contentName=TimesInternetWillowPlus&ads.xumo_providerId=4219&ads.xumo_providerName=TimesInternetWillowPlus&ads._fw_deviceMake=GitHubAction&ads._fw_device_model=PythonScript&ads.channelId=99951406&ads.xumo_platform=web&ads.site_id=&ads.appName=xumo&ads.appVersion=1.0.0&ads._fw_app_bundle=web.xumo.com&ads._fw_app_store_url="
-    },
-    {
-      "id": "99951530",
-      "name": "ONE Championship",
-      "logo": "https://image.xumo.com/v1/channels/channel/99951530/168x168.png?type=color_onBlack",
-      "group": "xumo_playlist",
-      "url": "https://dbrb49pjoymg4.cloudfront.net/10001/99951530/hls/master.m3u8?ads.xumo_channelId=99951530&ads.xumo_streamId=99951530&ads.channelId=99951530&ads.channelName=C15OneChampionship_us&ads.caid=C15OneChampionship&ads.csid=xumo_web_C15OneChampionship_ssai&ads.genre=Sport,Sports,SC&ads._fw_content_genre=Sport,Sports,SC&ads._fw_coppa=0&ads.xumo_contentId=4403&ads.xumo_contentName=C15OneChampionship&ads.xumo_providerId=4403&ads.xumo_providerName=C15OneChampionship&ads._fw_ifa_type=&ads._fw_did=587696c6-ae16-4cdf-909d-0f7b92d44b46&ads.amznappId=&ads.lat=&ads.lon=&ads.os=&ads.osv=&ads._fw_is_lat=0&ads._fw_us_privacy=&ads._fw_content_category=&ads._fw_content_language=en&ads._fw_content_rating=&ads._fw_deviceMake=GitHubAction&ads._fw_device_model=PythonScript&ads.xumo_platform=web&ads.site_id=&ads.appVersion=1.0.0&ads._fw_app_bundle=web.xumo.com&ads._fw_app_store_url=&ads.appName=XumoPlay"
-    },
-    {
-      "id": "99991785",
-      "name": "beIN SPORTS XTRA en Español",
-      "logo": "https://image.xumo.com/v1/channels/channel/99991785/168x168.png?type=color_onBlack",
-      "group": "xumo_playlist",
-      "url": "https://dbrb49pjoymg4.cloudfront.net/10001/99991785/hls/playlist.m3u8?ads.xumo_channelId=99991785&ads._fw_ifa_type=&ads._fw_did=9debeb43-3926-4359-80c6-191a39816bc8&ads.amznappId=&ads.lat=&ads.lon=&ads.os=&ads.osv=&ads.asnw=&ads.caid=BeInSportsESP&ads.csid=xumo_web_BeInSportsESP_ssai&ads._fw_is_lat=0&ads._fw_us_privacy=&ads._fw_coppa=0&ads.genre=&ads._fw_content_category=&ads._fw_content_language=es&ads._fw_content_genre=&ads._fw_content_rating=&ads.xumo_contentId=2642&ads.xumo_contentName=BeInSportsESP&ads.xumo_providerId=2642&ads.xumo_providerName=BeInSportsESP&ads._fw_deviceMake=GitHubAction&ads._fw_device_model=PythonScript&ads.channelId=99991785&ads.xumo_platform=web&ads.site_id=&ads.appName=xumo&ads.appVersion=1.0.0&ads._fw_app_bundle=web.xumo.com&ads._fw_app_store_url="
-    },
-    {
-      "id": "99951413",
-      "name": "NASCAR Channel",
-      "logo": "https://image.xumo.com/v1/channels/channel/99951413/168x168.png?type=color_onBlack",
-      "group": "xumo_playlist",
-      "url": "https://dbrb49pjoymg4.cloudfront.net/10001/99951413/hls/playlist.m3u8?ads.xumo_channelId=99951413&ads._fw_ifa_type=&ads._fw_did=45838ae9-22a6-4ab2-9a30-a0d3c0196607&ads.amznappId=&ads.lat=&ads.lon=&ads.os=&ads.osv=&ads.asnw=&ads.caid=TheNASCARChannel&ads.csid=xumo_web_TheNASCARChannel_ssai&ads._fw_is_lat=0&ads._fw_us_privacy=&ads._fw_coppa=0&ads.genre=&ads._fw_content_category=&ads._fw_content_language=en&ads._fw_content_genre=&ads._fw_content_rating=&ads.xumo_contentId=4228&ads.xumo_contentName=TheNASCARChannel&ads.xumo_providerId=4228&ads.xumo_providerName=TheNASCARChannel&ads._fw_deviceMake=GitHubAction&ads._fw_device_model=PythonScript&ads.channelId=99951413&ads.xumo_platform=web&ads.site_id=&ads.appName=xumo&ads.appVersion=1.0.0&ads._fw_app_bundle=web.xumo.com&ads._fw_app_store_url="
-    },
-    {
-      "id": "99951134",
-      "name": "UFC",
-      "logo": "https://image.xumo.com/v1/channels/channel/99951134/168x168.png?type=color_onBlack",
-      "group": "xumo_playlist",
-      "url": "https://dbrb49pjoymg4.cloudfront.net/10001/99951134/hls/playlist.m3u8?ads.xumo_channelId=99951134&ads._fw_ifa_type=&ads._fw_did=99cf06eb-95b3-4028-a42b-5480be40de6c&ads.amznappId=&ads.lat=&ads.lon=&ads.os=&ads.osv=&ads.asnw=&ads.caid=UFC&ads.csid=xumo_web_UFC_ssai&ads._fw_is_lat=0&ads._fw_us_privacy=&ads._fw_coppa=0&ads.genre=Sport,Sports,SA,SC,SE,SN&ads._fw_content_category=&ads._fw_content_language=en&ads._fw_content_genre=Sport,Sports,SA,SC,SE,SN&ads._fw_content_rating=&ads.xumo_contentId=3345&ads.xumo_contentName=UFC&ads.xumo_providerId=3345&ads.xumo_providerName=UFC&ads._fw_deviceMake=GitHubAction&ads._fw_device_model=PythonScript&ads.channelId=99951134&ads.xumo_platform=web&ads.site_id=&ads.appName=xumo&ads.appVersion=1.0.0&ads._fw_app_bundle=web.xumo.com&ads._fw_app_store_url="
-    },
-    {
-      "id": "99991645",
-      "name": "CBS Sports HQ",
-      "logo": "https://image.xumo.com/v1/channels/channel/99991645/168x168.png?type=color_onBlack",
-      "group": "xumo_playlist",
-      "url": "https://dai.google.com/linear/hls/event/9Lq0ERvoSR-z9AwvFS-xYA/master.m3u8?imafw_csid=;imafw__fw_h_referer=com.xumo.app&imafw__fw_did=dpid:&imafw__fw_is_lat=&imafw__fw_vcid2=&imafw__fw_app_bundle=web.xumo.com&imafw_is_lat="
-    },
-    {
-      "id": "CA2600001D9",
-      "name": "One Championship TV",
-      "logo": "https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CA2600001D9_20260303T094755SQUARE.png",
-      "group": "SamsungTVPlus-All",
-      "url": "https://jmp2.uk/stvp-CA2600001D9"
-    },
-    {
-      "id": "CA2900012S9",
-      "name": "UFC",
-      "logo": "https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CA2900012S9_20250729T185445SQUARE.png",
-      "group": "SamsungTVPlus-All",
-      "url": "https://jmp2.uk/stvp-CA2900012S9"
-    },
-    {
-      "id": "CABA8000043F",
-      "name": "beIN SPORTS XTRA",
-      "logo": "https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CABA8000043F_20250729T184950SQUARE.png",
-      "group": "SamsungTVPlus-All",
-      "url": "https://jmp2.uk/stvp-CABA8000043F"
-    },
-    {
-      "id": "ATAJ0500433A",
-      "name": "Sportdigital Free",
-      "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ATAJ0500433A_20250527T015549SQUARE.png",
-      "group": "SamsungTVPlus-All",
-      "url": "https://jmp2.uk/stvp-ATAJ0500433A"
-    },
-    {
-      "id": "ATBD1500003ES",
-      "name": "Red Bull TV",
-      "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ATBD1500003ES_20260324T040411SQUARE.png",
-      "group": "SamsungTVPlus-All",
-      "url": "https://jmp2.uk/stvp-ATBD1500003ES"
-    },
-    {
-      "id": "ATBA3300010PU",
-      "name": "Strongman Champions League",
-      "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ATBA3300010PU_20250107T022226SQUARE.png",
-      "group": "SamsungTVPlus-All",
-      "url": "https://jmp2.uk/stvp-ATBA3300010PU"
-    },
-    {
-      "id": "CA1400001PI",
-      "name": "MLB Channel",
-      "logo": "https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CA1400001PI_20250805T010157SQUARE.png",
-      "group": "SamsungTVPlus-All",
-      "url": "https://jmp2.uk/stvp-CA1400001PI"
-    },
-    {
-      "id": "CA36000019W",
-      "name": "The NBA Channel",
-      "logo": "https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CA36000019W_20260407T042211SQUARE.png",
-      "group": "SamsungTVPlus-All",
-      "url": "https://jmp2.uk/stvp-CA36000019W"
-    },
-    {
-      "id": "ATAJ0500431A",
-      "name": "just.fishing",
-      "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ATAJ0500431A_20250107T022019SQUARE.png",
-      "group": "SamsungTVPlus-All",
-      "url": "https://jmp2.uk/stvp-ATAJ0500431A"
-    },
-    {
-      "id": "CHAJ0500433A",
-      "name": "Sportdigital Free",
-      "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CHAJ0500433A_20250527T015644SQUARE.png",
-      "group": "SamsungTVPlus-All",
-      "url": "https://jmp2.uk/stvp-CHAJ0500433A"
-    },
-    {
-      "id": "ATBD700001VF",
-      "name": "DAZN Rise",
-      "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ATBD700001VF_20250513T005127SQUARE.png",
-      "group": "SamsungTVPlus-All",
-      "url": "https://jmp2.uk/stvp-ATBD700001VF"
-    },
-    {
-      "id": "CA20000016D",
-      "name": "Willow Sports",
-      "logo": "https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CA20000016D_20260112T181659SQUARE.png",
-      "group": "SamsungTVPlus-All",
-      "url": "https://jmp2.uk/stvp-CA20000016D"
-    },
-    {
-      "id": "ATBA3300009MF",
-      "name": "SPIEGEL TV Konflikte",
-      "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ATBA3300009MF_20250107T022441SQUARE.png",
-      "group": "SamsungTVPlus-All",
-      "url": "https://jmp2.uk/stvp-ATBA3300009MF"
-    },
-    {
-      "id": "CHBA3300011A6",
-      "name": "Strongman Champions League",
-      "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CHBA3300011A6_20250107T025607SQUARE.png",
-      "group": "SamsungTVPlus-All",
-      "url": "https://jmp2.uk/stvp-CHBA3300011A6"
-    },
-    {
-      "id": "CHBD1400002AK",
-      "name": "SPIEGEL TV Konflikte",
-      "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CHBD1400002AK_20250107T025551SQUARE.png",
-      "group": "SamsungTVPlus-All",
-      "url": "https://jmp2.uk/stvp-CHBD1400002AK"
-    },
-    {
-      "id": "DE32000079E",
-      "name": "Red Bull TV Motorsport",
-      "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/DE32000079E_20260324T034627SQUARE.png",
-      "group": "SamsungTVPlus-All",
-      "url": "https://jmp2.uk/stvp-DE32000079E"
-    },
-    {
-      "id": "ATBA2200008XN",
-      "name": "Tennis Channel",
-      "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ATBA2200008XN_20251125T100519SQUARE.png",
-      "group": "SamsungTVPlus-All",
-      "url": "https://jmp2.uk/stvp-ATBA2200008XN"
-    },
-    {
-      "id": "CA700002VS",
-      "name": "NASCAR Channel",
-      "logo": "https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CA700002VS_20250523T235632SQUARE.png",
-      "group": "SamsungTVPlus-All",
-      "url": "https://jmp2.uk/stvp-CA700002VS"
-    },
-    {
-      "id": "DEBD700001C5",
-      "name": "DAZN Rise",
-      "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/DEBD700001C5_20260224T030505SQUARE.png",
-      "group": "SamsungTVPlus-All",
-      "url": "https://jmp2.uk/stvp-DEBD700001C5"
-    },
-    {
-      "id": "DE400010IF",
-      "name": "DF1",
-      "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/DE400010IF_20260310T031442SQUARE.png",
-      "group": "SamsungTVPlus-All",
-      "url": "https://jmp2.uk/stvp-DE400010IF"
-    },
-    {
-      "id": "DEAJ0500429A",
-      "name": "Sportdigital Free",
-      "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/DEAJ0500429A_20250527T015726SQUARE.png",
-      "group": "SamsungTVPlus-All",
-      "url": "https://jmp2.uk/stvp-DEAJ0500429A"
-    },
-    {
-      "id": "DEAJ2900001NG",
-      "name": "SPIEGEL TV Konflikte",
-      "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/DEAJ2900001NG_20250107T024403SQUARE.png",
-      "group": "SamsungTVPlus-All",
-      "url": "https://jmp2.uk/stvp-DEAJ2900001NG"
-    },
-    {
-      "id": "DEBC2300001EU",
-      "name": "Red Bull TV",
-      "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/DEBC2300001EU_20260127T100114SQUARE.png",
-      "group": "SamsungTVPlus-All",
-      "url": "https://jmp2.uk/stvp-DEBC2300001EU"
-    },
-    {
-      "id": "DEBA3300016EV",
-      "name": "Strongman Champions League",
-      "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/DEBA3300016EV_20250107T024420SQUARE.png",
-      "group": "SamsungTVPlus-All",
-      "url": "https://jmp2.uk/stvp-DEBA3300016EV"
-    },
-    {
-      "id": "DEAJ0500428A",
-      "name": "just.fishing",
-      "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/DEAJ0500428A_20250107T024237SQUARE.png",
-      "group": "SamsungTVPlus-All",
-      "url": "https://jmp2.uk/stvp-DEAJ0500428A"
-    },
-    {
-      "id": "CHBA22000080G",
-      "name": "Tennis Channel",
-      "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CHBA22000080G_20251125T102207SQUARE.png",
-      "group": "SamsungTVPlus-All",
-      "url": "https://jmp2.uk/stvp-CHBA22000080G"
-    },
-    {
-      "id": "ES3800001V1",
-      "name": "Red Bull TV",
-      "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES3800001V1_20260113T032331SQUARE.png",
-      "group": "SamsungTVPlus-All",
-      "url": "https://jmp2.uk/stvp-ES3800001V1"
-    },
-    {
-      "id": "ES4300004JP",
-      "name": "Rugby Challenge",
-      "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES4300004JP_20260120T031337SQUARE.png",
-      "group": "SamsungTVPlus-All",
-      "url": "https://jmp2.uk/stvp-ES4300004JP"
-    },
-    {
-      "id": "ESBD3600001Q1",
-      "name": "La Liga Inside",
-      "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBD3600001Q1_20241022T050545SQUARE.png",
-      "group": "SamsungTVPlus-All",
-      "url": "https://jmp2.uk/stvp-ESBD3600001Q1"
-    },
-    {
-      "id": "FRBD4100013LN",
-      "name": "Motor Racing",
-      "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/FRBD4100013LN_20241015T040359SQUARE.png",
-      "group": "SamsungTVPlus-All",
-      "url": "https://jmp2.uk/stvp-FRBD4100013LN"
-    },
-    {
-      "id": "GB2700012HS",
-      "name": "Sky Sports Classics",
-      "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/GB2700012HS_20260317T034217SQUARE.png",
-      "group": "SamsungTVPlus-All",
-      "url": "https://jmp2.uk/stvp-GB2700012HS"
     },
     {
       "id": "GBBD30000038U",
@@ -330,32 +15,165 @@
       "url": "https://jmp2.uk/stvp-GBBD30000038U"
     },
     {
-      "id": "IT600001L6",
-      "name": "Italian Fishing TV",
-      "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT600001L6_20241022T051638SQUARE.png",
+      "id": "DEBD700001C5",
+      "name": "DAZN Rise",
+      "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/DEBD700001C5_20260224T030505SQUARE.png",
       "group": "SamsungTVPlus-All",
-      "url": "https://jmp2.uk/stvp-IT600001L6"
+      "url": "https://jmp2.uk/stvp-DEBD700001C5"
     },
     {
-      "id": "GBBD2300003IK",
-      "name": "Red Bull TV",
-      "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/GBBD2300003IK_20250805T005540SQUARE.png",
+      "id": "ATBD700001VF",
+      "name": "DAZN Rise",
+      "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ATBD700001VF_20250513T005127SQUARE.png",
       "group": "SamsungTVPlus-All",
-      "url": "https://jmp2.uk/stvp-GBBD2300003IK"
+      "url": "https://jmp2.uk/stvp-ATBD700001VF"
     },
     {
-      "id": "IT38000070T",
-      "name": "Red Bull TV",
-      "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT38000070T_20251202T002728SQUARE.png",
+      "id": "FR2200002HV",
+      "name": "Fireplace Vibes",
+      "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/FR2200002HV_20251216T040612SQUARE.png",
       "group": "SamsungTVPlus-All",
-      "url": "https://jmp2.uk/stvp-IT38000070T"
+      "url": "https://jmp2.uk/stvp-FR2200002HV"
     },
     {
-      "id": "GB330000144",
-      "name": "RugbyPass TV",
-      "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/GB330000144_20250624T020553SQUARE.png",
+      "id": "GB2200001N2",
+      "name": "Fireplace Vibes",
+      "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/GB2200001N2_20250729T045859SQUARE.png",
       "group": "SamsungTVPlus-All",
-      "url": "https://jmp2.uk/stvp-GB330000144"
+      "url": "https://jmp2.uk/stvp-GB2200001N2"
+    },
+    {
+      "id": "AT22000019A",
+      "name": "Fireplace Vibes",
+      "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/AT22000019A_20250729T044437SQUARE.png",
+      "group": "SamsungTVPlus-All",
+      "url": "https://jmp2.uk/stvp-AT22000019A"
+    },
+    {
+      "id": "ES2200001SF",
+      "name": "Fireplace Vibes",
+      "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ES2200001SF_20250729T045059SQUARE.png",
+      "group": "SamsungTVPlus-All",
+      "url": "https://jmp2.uk/stvp-ES2200001SF"
+    },
+    {
+      "id": "DE22000012Y",
+      "name": "Fireplace Vibes",
+      "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/DE22000012Y_20250729T044923SQUARE.png",
+      "group": "SamsungTVPlus-All",
+      "url": "https://jmp2.uk/stvp-DE22000012Y"
+    },
+    {
+      "id": "CH220000164",
+      "name": "Fireplace Vibes",
+      "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CH220000164_20250729T044454SQUARE.png",
+      "group": "SamsungTVPlus-All",
+      "url": "https://jmp2.uk/stvp-CH220000164"
+    },
+    {
+      "id": "ESBD3600001Q1",
+      "name": "La Liga Inside",
+      "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ESBD3600001Q1_20241022T050545SQUARE.png",
+      "group": "SamsungTVPlus-All",
+      "url": "https://jmp2.uk/stvp-ESBD3600001Q1"
+    },
+    {
+      "id": "CABA8000043F",
+      "name": "beIN SPORTS XTRA",
+      "logo": "https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CABA8000043F_20250729T184950SQUARE.png",
+      "group": "SamsungTVPlus-All",
+      "url": "https://jmp2.uk/stvp-CABA8000043F"
+    },
+    {
+      "id": "99991196",
+      "name": "FOX Sports",
+      "logo": "https://image.xumo.com/v1/channels/channel/99991196/168x168.png?type=color_onBlack",
+      "group": "xumo_playlist",
+      "url": "https://dbrb49pjoymg4.cloudfront.net/10001/99991196/hls/xumo.m3u8?ads.xumo_channelId=99991196&ads._fw_ifa_type=&ads._fw_did=725c7ad8-132a-4ea0-a771-904f040a8784&ads.amznappId=&ads.lat=&ads.lon=&ads.os=&ads.osv=&ads.asnw=&ads.caid=FoxSports&ads.csid=xumo_web_FoxSports_ssai&ads._fw_is_lat=0&ads._fw_us_privacy=&ads._fw_coppa=0&ads.genre=Sport,Sports,SA,SC,SE,SN&ads._fw_content_category=&ads._fw_content_language=en&ads._fw_content_genre=Sport,Sports,SA,SC,SE,SN&ads._fw_content_rating=&ads.xumo_contentId=142&ads.xumo_contentName=FoxSports&ads.xumo_providerId=142&ads.xumo_providerName=FoxSports&ads._fw_deviceMake=GitHubAction&ads._fw_device_model=PythonScript&ads.channelId=99991196&ads.xumo_platform=web&ads.site_id=&ads.appName=xumo&ads.appVersion=1.0.0&ads._fw_app_bundle=web.xumo.com&ads._fw_app_store_url="
+    },
+    {
+      "id": "99951406",
+      "name": "Willow Sports",
+      "logo": "https://image.xumo.com/v1/channels/channel/99951406/168x168.png?type=color_onBlack",
+      "group": "xumo_playlist",
+      "url": "https://dbrb49pjoymg4.cloudfront.net/10001/99951406/hls/playlist.m3u8?ads.xumo_channelId=99951406&ads._fw_ifa_type=&ads._fw_did=1a4a05a4-cc36-4b7c-9008-7d96cf0056bb&ads.amznappId=&ads.lat=&ads.lon=&ads.os=&ads.osv=&ads.asnw=&ads.caid=TimesInternetWillowPlus&ads.csid=xumo_web_TimesInternetWillowPlus_ssai&ads._fw_is_lat=0&ads._fw_us_privacy=&ads._fw_coppa=0&ads.genre=Sport,Sports,SA,SC,SE,SN&ads._fw_content_category=&ads._fw_content_language=en&ads._fw_content_genre=Sport,Sports,SA,SC,SE,SN&ads._fw_content_rating=&ads.xumo_contentId=4219&ads.xumo_contentName=TimesInternetWillowPlus&ads.xumo_providerId=4219&ads.xumo_providerName=TimesInternetWillowPlus&ads._fw_deviceMake=GitHubAction&ads._fw_device_model=PythonScript&ads.channelId=99951406&ads.xumo_platform=web&ads.site_id=&ads.appName=xumo&ads.appVersion=1.0.0&ads._fw_app_bundle=web.xumo.com&ads._fw_app_store_url="
+    },
+    {
+      "id": "99951266",
+      "name": "FanDuel TV Extra",
+      "logo": "https://image.xumo.com/v1/channels/channel/99951266/168x168.png?type=color_onBlack",
+      "group": "xumo_playlist",
+      "url": "https://dbrb49pjoymg4.cloudfront.net/10001/99951266/hls/playlist.m3u8?ads.xumo_channelId=99951266&ads._fw_ifa_type=&ads._fw_did=d056d809-ec65-4a25-8102-a8b681638ba8&ads.amznappId=&ads.lat=&ads.lon=&ads.os=&ads.osv=&ads.asnw=&ads.caid=FanDuelTV&ads.csid=xumo_web_FanDuelTV_ssai&ads._fw_is_lat=0&ads._fw_us_privacy=&ads._fw_coppa=0&ads.genre=Sport,Sports,SA,SC,SE,SN&ads._fw_content_category=&ads._fw_content_language=en&ads._fw_content_genre=Sport,Sports,SA,SC,SE,SN&ads._fw_content_rating=&ads.xumo_contentId=3971&ads.xumo_contentName=FanDuelTV&ads.xumo_providerId=3971&ads.xumo_providerName=FanDuelTV&ads._fw_deviceMake=GitHubAction&ads._fw_device_model=PythonScript&ads.channelId=99951266&ads.xumo_platform=web&ads.site_id=&ads.appName=xumo&ads.appVersion=1.0.0&ads._fw_app_bundle=web.xumo.com&ads._fw_app_store_url="
+    },
+    {
+      "id": "DEBA3300016EV",
+      "name": "Strongman Champions League",
+      "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/DEBA3300016EV_20250107T024420SQUARE.png",
+      "group": "SamsungTVPlus-All",
+      "url": "https://jmp2.uk/stvp-DEBA3300016EV"
+    },
+    {
+      "id": "99951253",
+      "name": "NBC Sports NOW",
+      "logo": "https://image.xumo.com/v1/channels/channel/99951253/168x168.png?type=color_onBlack",
+      "group": "xumo_playlist",
+      "url": "https://d4whmvwm0rdvi.cloudfront.net/10007/99951253/hls/master.m3u8?ads.xumo_channelId=99951253&ads.asnw=169843&ads.afid=380753925&ads.sfid=19208128&ads.csid=xumo_web_NBCUSports_ssai_cro&ads._fw_is_lat=0&ads._fw_us_privacy=&ads._fw_coppa=0&ads._fw_did=1bfbda7a-8998-4358-9568-a10e41eeae39&ads._fw_vcid2=512116:1bfbda7a-8998-4358-9568-a10e41eeae39&ads._fw_app_bundle=web.xumo.com&ads._fw_app_store_url=&ads._fw_content_category=&ads._fw_content_genre=Sport,Sports,SA,SC,SE,SN&ads._fw_content_language=en&ads._fw_content_rating=&ads._fw_deviceMake=GitHubAction&ads._fw_device_model=PythonScript&ads._fw_deviceType=3-Connected_TV&ads.appVersion=1.0.0&ads.appName=XumoPlay&ads.xumo_contentId=3929&ads.xumo_contentName=NBCUSports&ads.xumo_providerId=3929&ads.xumo_providerName=NBCUSports&ads.channelId=99951253&ads._fw_ifa_type="
+    },
+    {
+      "id": "99951180",
+      "name": "Strongman Champions League",
+      "logo": "https://image.xumo.com/v1/channels/channel/99951180/168x168.png?type=color_onBlack",
+      "group": "xumo_playlist",
+      "url": "https://dbrb49pjoymg4.cloudfront.net/10001/99951180/hls/playlist.m3u8?ads.xumo_channelId=99951180&ads._fw_ifa_type=&ads._fw_did=2281509d-7183-4449-ac61-ea451362d6c2&ads.amznappId=&ads.lat=&ads.lon=&ads.os=&ads.osv=&ads.asnw=&ads.caid=RightsBoosterStrongmanChamp&ads.csid=xumo_web_RightsBoosterStrongmanChamp_ssai&ads._fw_is_lat=0&ads._fw_us_privacy=&ads._fw_coppa=0&ads.genre=Sport,Sports,SA,SC,SE,SN&ads._fw_content_category=&ads._fw_content_language=en&ads._fw_content_genre=Sport,Sports,SA,SC,SE,SN&ads._fw_content_rating=&ads.xumo_contentId=3808&ads.xumo_contentName=RightsBoosterStrongmanChamp&ads.xumo_providerId=3808&ads.xumo_providerName=RightsBoosterStrongmanChamp&ads._fw_deviceMake=GitHubAction&ads._fw_device_model=PythonScript&ads.channelId=99951180&ads.xumo_platform=web&ads.site_id=&ads.appName=xumo&ads.appVersion=1.0.0&ads._fw_app_bundle=web.xumo.com&ads._fw_app_store_url="
+    },
+    {
+      "id": "99991785",
+      "name": "beIN SPORTS XTRA en Español",
+      "logo": "https://image.xumo.com/v1/channels/channel/99991785/168x168.png?type=color_onBlack",
+      "group": "xumo_playlist",
+      "url": "https://dbrb49pjoymg4.cloudfront.net/10001/99991785/hls/playlist.m3u8?ads.xumo_channelId=99991785&ads._fw_ifa_type=&ads._fw_did=9debeb43-3926-4359-80c6-191a39816bc8&ads.amznappId=&ads.lat=&ads.lon=&ads.os=&ads.osv=&ads.asnw=&ads.caid=BeInSportsESP&ads.csid=xumo_web_BeInSportsESP_ssai&ads._fw_is_lat=0&ads._fw_us_privacy=&ads._fw_coppa=0&ads.genre=&ads._fw_content_category=&ads._fw_content_language=es&ads._fw_content_genre=&ads._fw_content_rating=&ads.xumo_contentId=2642&ads.xumo_contentName=BeInSportsESP&ads.xumo_providerId=2642&ads.xumo_providerName=BeInSportsESP&ads._fw_deviceMake=GitHubAction&ads._fw_device_model=PythonScript&ads.channelId=99991785&ads.xumo_platform=web&ads.site_id=&ads.appName=xumo&ads.appVersion=1.0.0&ads._fw_app_bundle=web.xumo.com&ads._fw_app_store_url="
+    },
+    {
+      "id": "IT2200001FW",
+      "name": "Fireplace Vibes",
+      "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IT2200001FW_20250729T045559SQUARE.png",
+      "group": "SamsungTVPlus-All",
+      "url": "https://jmp2.uk/stvp-IT2200001FW"
+    },
+    {
+      "id": "99991645",
+      "name": "CBS Sports HQ",
+      "logo": "https://image.xumo.com/v1/channels/channel/99991645/168x168.png?type=color_onBlack",
+      "group": "xumo_playlist",
+      "url": "https://dai.google.com/linear/hls/event/9Lq0ERvoSR-z9AwvFS-xYA/master.m3u8?imafw_csid=;imafw__fw_h_referer=com.xumo.app&imafw__fw_did=dpid:&imafw__fw_is_lat=&imafw__fw_vcid2=&imafw__fw_app_bundle=web.xumo.com&imafw_is_lat="
+    },
+    {
+      "id": "CHBA3300011A6",
+      "name": "Strongman Champions League",
+      "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CHBA3300011A6_20250107T025607SQUARE.png",
+      "group": "SamsungTVPlus-All",
+      "url": "https://jmp2.uk/stvp-CHBA3300011A6"
+    },
+    {
+      "id": "ATBA3300010PU",
+      "name": "Strongman Champions League",
+      "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ATBA3300010PU_20250107T022226SQUARE.png",
+      "group": "SamsungTVPlus-All",
+      "url": "https://jmp2.uk/stvp-ATBA3300010PU"
+    },
+    {
+      "id": "CA20000016D",
+      "name": "Willow Sports",
+      "logo": "https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CA20000016D_20260112T181659SQUARE.png",
+      "group": "SamsungTVPlus-All",
+      "url": "https://jmp2.uk/stvp-CA20000016D"
+    },
+    {
+      "id": "CABB260002016",
+      "name": "Fireplace Vibes",
+      "logo": "https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CABB260002016_20260303T094709SQUARE.png",
+      "group": "SamsungTVPlus-All",
+      "url": "https://jmp2.uk/stvp-CABB260002016"
     },
     {
       "id": "GB2700013Y7",
@@ -363,6 +181,20 @@
       "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/GB2700013Y7_20260317T034220SQUARE.png",
       "group": "SamsungTVPlus-All",
       "url": "https://jmp2.uk/stvp-GB2700013Y7"
+    },
+    {
+      "id": "CA29000043R",
+      "name": "Luxe Fireplace Vibes",
+      "logo": "https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CA29000043R_20251209T013617SQUARE.png",
+      "group": "SamsungTVPlus-All",
+      "url": "https://jmp2.uk/stvp-CA29000043R"
+    },
+    {
+      "id": "GB2700012HS",
+      "name": "Sky Sports Classics",
+      "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/GB2700012HS_20260317T034217SQUARE.png",
+      "group": "SamsungTVPlus-All",
+      "url": "https://jmp2.uk/stvp-GB2700012HS"
     },
     {
       "id": "GBBC90001089",
@@ -379,88 +211,11 @@
       "url": "https://jmp2.uk/stvp-US2700001QY"
     },
     {
-      "id": "ITBA14000026G",
-      "name": "Anche i ricchi piangono",
-      "logo": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ITBA14000026G_20250307T152327SQUARE.png",
+      "id": "KRBD44000025L",
+      "name": "Fireplace 4K",
+      "logo": "https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/KRBD44000025L_20251223T004824SQUARE.png",
       "group": "SamsungTVPlus-All",
-      "url": "https://jmp2.uk/stvp-ITBA14000026G"
-    },
-    {
-      "id": "USBD420002446",
-      "name": "NBC Sports NOW",
-      "logo": "https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/USBD420002446_20250729T010447SQUARE.png",
-      "group": "SamsungTVPlus-All",
-      "url": "https://jmp2.uk/stvp-USBD420002446"
-    },
-    {
-      "id": "US2600006VY",
-      "name": "One Championship TV",
-      "logo": "https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/US2600006VY_20241031T150124SQUARE.png",
-      "group": "SamsungTVPlus-All",
-      "url": "https://jmp2.uk/stvp-US2600006VY"
-    },
-    {
-      "id": "US34000040T",
-      "name": "ESPN8: The Ocho",
-      "logo": "https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/US34000040T_20251021T192153SQUARE.png",
-      "group": "SamsungTVPlus-All",
-      "url": "https://jmp2.uk/stvp-US34000040T"
-    },
-    {
-      "id": "US1000004YJ",
-      "name": "RugbyPass TV",
-      "logo": "https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/US1000004YJ_20250714T223139SQUARE.png",
-      "group": "SamsungTVPlus-All",
-      "url": "https://jmp2.uk/stvp-US1000004YJ"
-    },
-    {
-      "id": "US20000131M",
-      "name": "Willow Sports",
-      "logo": "https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/US20000131M_20251209T010001SQUARE.png",
-      "group": "SamsungTVPlus-All",
-      "url": "https://jmp2.uk/stvp-US20000131M"
-    },
-    {
-      "id": "USBB400000145",
-      "name": "GolfPass",
-      "logo": "https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/USBB400000145_20251209T005933SQUARE.png",
-      "group": "SamsungTVPlus-All",
-      "url": "https://jmp2.uk/stvp-USBB400000145"
-    },
-    {
-      "id": "USAJ4300001Q7",
-      "name": "beIN SPORTS XTRA",
-      "logo": "https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/USAJ4300001Q7_20241105T024240SQUARE.png",
-      "group": "SamsungTVPlus-All",
-      "url": "https://jmp2.uk/stvp-USAJ4300001Q7"
-    },
-    {
-      "id": "IN1300001NN",
-      "name": "Cricket Gold",
-      "logo": "https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN1300001NN_20260311T004431SQUARE.png",
-      "group": "SamsungTVPlus-All",
-      "url": "https://jmp2.uk/stvp-IN1300001NN"
-    },
-    {
-      "id": "CricketGold.au@SD",
-      "name": "Cricket Gold (1080p)",
-      "logo": "",
-      "group": "SOFAST",
-      "url": "https://streams2.sofast.tv/scheduler/scheduleMaster/418.m3u8"
-    },
-    {
-      "id": "sport_fishing_tv__1080p_",
-      "name": "Sport Fishing TV (1080p)",
-      "logo": "",
-      "group": "SOFAST",
-      "url": "https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/eea68b79-bfe2-451e-a227-d637a5b9548a/manifest.m3u8"
-    },
-    {
-      "id": "US3500007C4",
-      "name": "MotoGP Channel",
-      "logo": "https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/US3500007C4_20251110T235106SQUARE.png",
-      "group": "SamsungTVPlus-All",
-      "url": "https://jmp2.uk/stvp-US3500007C4"
+      "url": "https://jmp2.uk/stvp-KRBD44000025L"
     },
     {
       "id": "USBB4800005VO",
@@ -470,39 +225,25 @@
       "url": "https://jmp2.uk/stvp-USBB4800005VO"
     },
     {
-      "id": "US700021SM",
-      "name": "NASCAR Channel",
-      "logo": "https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/US700021SM_20250505T232701SQUARE.png",
+      "id": "US34000040T",
+      "name": "ESPN8: The Ocho",
+      "logo": "https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/US34000040T_20251021T192153SQUARE.png",
       "group": "SamsungTVPlus-All",
-      "url": "https://jmp2.uk/stvp-US700021SM"
+      "url": "https://jmp2.uk/stvp-US34000040T"
     },
     {
-      "id": "US700005ID",
-      "name": "WWE Superstar Central",
-      "logo": "https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/US700005ID_20250408T020812SQUARE.png",
+      "id": "USAJ4300001Q7",
+      "name": "beIN SPORTS XTRA",
+      "logo": "https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/USAJ4300001Q7_20241105T024240SQUARE.png",
       "group": "SamsungTVPlus-All",
-      "url": "https://jmp2.uk/stvp-US700005ID"
+      "url": "https://jmp2.uk/stvp-USAJ4300001Q7"
     },
     {
-      "id": "star_sports_sl_1",
-      "name": "Star Sports SL 1",
-      "logo": "",
-      "group": "BD",
-      "url": "https://mflixott.com/tv/plusbox/live/StarSportsSelect1/index.m3u8"
-    },
-    {
-      "id": "US600011Q2",
-      "name": "Formula 1 Channel",
-      "logo": "https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/US600011Q2_20241112T001019SQUARE.png",
+      "id": "USBD420002446",
+      "name": "NBC Sports NOW",
+      "logo": "https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/USBD420002446_20250729T010447SQUARE.png",
       "group": "SamsungTVPlus-All",
-      "url": "https://jmp2.uk/stvp-US600011Q2"
-    },
-    {
-      "id": "nbc_sports",
-      "name": "NBC Sports",
-      "logo": "https://s3.aynaott.com/storage/0a241a80bf51d2c3b3722531706ce086",
-      "group": "BD",
-      "url": "https://xumo-xumoent-vc-122-sjv70.fast.nbcuni.com/live/master.m3u8"
+      "url": "https://jmp2.uk/stvp-USBD420002446"
     },
     {
       "id": "US2700004DX",
@@ -512,18 +253,109 @@
       "url": "https://jmp2.uk/stvp-US2700004DX"
     },
     {
-      "id": "5e66968a70f34c0007d050be",
-      "name": "MLB",
-      "logo": "https://images.pluto.tv/channels/5e66968a70f34c0007d050be/colorLogoPNG.png",
-      "group": "PlutoTV-All",
-      "url": "https://jmp2.uk/plu-5e66968a70f34c0007d050be.m3u8"
+      "id": "US1400012RF",
+      "name": "FanDuel TV Extra",
+      "logo": "https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/US1400012RF_20250318T021027SQUARE.png",
+      "group": "SamsungTVPlus-All",
+      "url": "https://jmp2.uk/stvp-US1400012RF"
     },
     {
-      "id": "65b14aae0cb1a100087a216e",
-      "name": "DAZN Ringside",
-      "logo": "https://images.pluto.tv/channels/65b14aae0cb1a100087a216e/colorLogoPNG.png",
+      "id": "US20000131M",
+      "name": "Willow Sports",
+      "logo": "https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/US20000131M_20251209T010001SQUARE.png",
+      "group": "SamsungTVPlus-All",
+      "url": "https://jmp2.uk/stvp-US20000131M"
+    },
+    {
+      "id": "USAJ2200023Z0",
+      "name": "fubo Sports Network",
+      "logo": "https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/USAJ2200023Z0_20251014T230120SQUARE.png",
+      "group": "SamsungTVPlus-All",
+      "url": "https://jmp2.uk/stvp-USAJ2200023Z0"
+    },
+    {
+      "id": "nbc_sports",
+      "name": "NBC Sports",
+      "logo": "https://s3.aynaott.com/storage/0a241a80bf51d2c3b3722531706ce086",
+      "group": "BD",
+      "url": "https://xumo-xumoent-vc-122-sjv70.fast.nbcuni.com/live/master.m3u8"
+    },
+    {
+      "id": "USBA3800004EL",
+      "name": "Fireplace Vibes",
+      "logo": "https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/USBA3800004EL_20241105T185655SQUARE.png",
+      "group": "SamsungTVPlus-All",
+      "url": "https://jmp2.uk/stvp-USBA3800004EL"
+    },
+    {
+      "id": "62ba60f059624e000781c436",
+      "name": "00s Replay",
+      "logo": "https://images.pluto.tv/channels/62ba60f059624e000781c436/colorLogoPNG.png",
       "group": "PlutoTV-All",
-      "url": "https://jmp2.uk/plu-65b14aae0cb1a100087a216e.m3u8"
+      "url": "https://jmp2.uk/plu-62ba60f059624e000781c436.m3u8"
+    },
+    {
+      "id": "697140a85d851f5e69414688-62ffc5cfa6cad6f2991745c2",
+      "name": "FUEL TV",
+      "logo": "https://provider-static.plex.tv/epg/cms/production/b3f56031-6337-4d19-a487-9edefea3ce28/CHANNEL_LOGO_3X2.png",
+      "group": "Plex-All",
+      "url": "https://jmp2.uk/plex-697140a85d851f5e69414688-62ffc5cfa6cad6f2991745c2.m3u8"
+    },
+    {
+      "id": "608049aefa2b8ae93c2c3a63-62ffc5cfa6cad6f2991745c2",
+      "name": "FUEL TV",
+      "logo": "https://provider-static.plex.tv/epg/cms/production/b3f56031-6337-4d19-a487-9edefea3ce28/CHANNEL_LOGO_3X2.png",
+      "group": "Plex-All",
+      "url": "https://jmp2.uk/plex-608049aefa2b8ae93c2c3a63-62ffc5cfa6cad6f2991745c2.m3u8"
+    },
+    {
+      "id": "647f8d22a2fc3fadb4721685-62ffc5cfa6cad6f2991745c2",
+      "name": "FUEL TV",
+      "logo": "https://provider-static.plex.tv/epg/cms/production/b3f56031-6337-4d19-a487-9edefea3ce28/CHANNEL_LOGO_3X2.png",
+      "group": "Plex-All",
+      "url": "https://jmp2.uk/plex-647f8d22a2fc3fadb4721685-62ffc5cfa6cad6f2991745c2.m3u8"
+    },
+    {
+      "id": "643054b1fc3be59477853717-62ffc5cfa6cad6f2991745c2",
+      "name": "FUEL TV",
+      "logo": "https://provider-static.plex.tv/epg/cms/production/b3f56031-6337-4d19-a487-9edefea3ce28/CHANNEL_LOGO_3X2.png",
+      "group": "Plex-All",
+      "url": "https://jmp2.uk/plex-643054b1fc3be59477853717-62ffc5cfa6cad6f2991745c2.m3u8"
+    },
+    {
+      "id": "64305451fc3be5947773c339-62ffc5cfa6cad6f2991745c2",
+      "name": "FUEL TV",
+      "logo": "https://provider-static.plex.tv/epg/cms/production/b3f56031-6337-4d19-a487-9edefea3ce28/CHANNEL_LOGO_3X2.png",
+      "group": "Plex-All",
+      "url": "https://jmp2.uk/plex-64305451fc3be5947773c339-62ffc5cfa6cad6f2991745c2.m3u8"
+    },
+    {
+      "id": "5e20b730f2f8d5003d739db7-62ffc5cfa6cad6f2991745c2",
+      "name": "FUEL TV",
+      "logo": "https://provider-static.plex.tv/epg/cms/production/b3f56031-6337-4d19-a487-9edefea3ce28/CHANNEL_LOGO_3X2.png",
+      "group": "Plex-All",
+      "url": "https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-62ffc5cfa6cad6f2991745c2.m3u8"
+    },
+    {
+      "id": "6430aa45fc3be5947780904e-62ffc5cfa6cad6f2991745c2",
+      "name": "FUEL TV",
+      "logo": "https://provider-static.plex.tv/epg/cms/production/b3f56031-6337-4d19-a487-9edefea3ce28/CHANNEL_LOGO_3X2.png",
+      "group": "Plex-All",
+      "url": "https://jmp2.uk/plex-6430aa45fc3be5947780904e-62ffc5cfa6cad6f2991745c2.m3u8"
+    },
+    {
+      "id": "5ff8c708653d080007361b14",
+      "name": "Paramount+ Picks",
+      "logo": "https://images.pluto.tv/channels/5ff8c708653d080007361b14/colorLogoPNG.png",
+      "group": "PlutoTV-All",
+      "url": "https://jmp2.uk/plu-5ff8c708653d080007361b14.m3u8"
+    },
+    {
+      "id": "645cb7857cb4b1000859c57c",
+      "name": "True crime från Viaplay",
+      "logo": "https://images.pluto.tv/channels/645cb7857cb4b1000859c57c/colorLogoPNG.png",
+      "group": "PlutoTV-All",
+      "url": "https://jmp2.uk/plu-645cb7857cb4b1000859c57c.m3u8"
     },
     {
       "id": "5e9f2c05172a0f0007db4786",
@@ -533,88 +365,18 @@
       "url": "https://jmp2.uk/plu-5e9f2c05172a0f0007db4786.m3u8"
     },
     {
-      "id": "66f1331f9409630008077623",
-      "name": "Earth: Final Conflict",
-      "logo": "https://images.pluto.tv/channels/66f1331f9409630008077623/colorLogoPNG_1730797917382.png",
+      "id": "650b68bc2ce8e40008ac9c14",
+      "name": "FanDuel TV Extra",
+      "logo": "https://images.pluto.tv/channels/650b68bc2ce8e40008ac9c14/colorLogoPNG_1744930668027.png",
       "group": "PlutoTV-All",
-      "url": "https://jmp2.uk/plu-66f1331f9409630008077623.m3u8"
+      "url": "https://jmp2.uk/plu-650b68bc2ce8e40008ac9c14.m3u8"
     },
     {
-      "id": "6549306c83595c000815a696",
-      "name": "NBC Sports NOW",
-      "logo": "https://images.pluto.tv/channels/6549306c83595c000815a696/colorLogoPNG.png",
+      "id": "65b14aae0cb1a100087a216e",
+      "name": "DAZN Ringside",
+      "logo": "https://images.pluto.tv/channels/65b14aae0cb1a100087a216e/colorLogoPNG.png",
       "group": "PlutoTV-All",
-      "url": "https://jmp2.uk/plu-6549306c83595c000815a696.m3u8"
-    },
-    {
-      "id": "66ed3e9d5e4a6e0008b346e0",
-      "name": "UFC",
-      "logo": "https://images.pluto.tv/channels/66ed3e9d5e4a6e0008b346e0/colorLogoPNG.png",
-      "group": "PlutoTV-All",
-      "url": "https://jmp2.uk/plu-66ed3e9d5e4a6e0008b346e0.m3u8"
-    },
-    {
-      "id": "6792c30abc03978b9b8bb832",
-      "name": "The NBA Channel",
-      "logo": "https://images.pluto.tv/channels/6792c30abc03978b9b8bb832/colorLogoPNG_1747950897785.png",
-      "group": "PlutoTV-All",
-      "url": "https://jmp2.uk/plu-6792c30abc03978b9b8bb832.m3u8"
-    },
-    {
-      "id": "668c5d3bfd9eb2000882bb50",
-      "name": "ONE Championship TV",
-      "logo": "https://images.pluto.tv/channels/668c5d3bfd9eb2000882bb50/colorLogoPNG.png",
-      "group": "PlutoTV-All",
-      "url": "https://jmp2.uk/plu-668c5d3bfd9eb2000882bb50.m3u8"
-    },
-    {
-      "id": "5417a212ff9fba68282fbf5e",
-      "name": "GLORY Kickboxing",
-      "logo": "https://images.pluto.tv/channels/5417a212ff9fba68282fbf5e/colorLogoPNG.png",
-      "group": "PlutoTV-All",
-      "url": "https://jmp2.uk/plu-5417a212ff9fba68282fbf5e.m3u8"
-    },
-    {
-      "id": "67921b873de7c8cf94233f52",
-      "name": "UFC",
-      "logo": "https://images.pluto.tv/channels/67921b873de7c8cf94233f52/colorLogoPNG.png",
-      "group": "PlutoTV-All",
-      "url": "https://jmp2.uk/plu-67921b873de7c8cf94233f52.m3u8"
-    },
-    {
-      "id": "65493029ab052400089e9d2f",
-      "name": "GolfPass",
-      "logo": "https://images.pluto.tv/channels/65493029ab052400089e9d2f/colorLogoPNG_1766432879705.png",
-      "group": "PlutoTV-All",
-      "url": "https://jmp2.uk/plu-65493029ab052400089e9d2f.m3u8"
-    },
-    {
-      "id": "61b33085897b9d000702b72e",
-      "name": "Just.fishing",
-      "logo": "https://images.pluto.tv/channels/61b33085897b9d000702b72e/colorLogoPNG.png",
-      "group": "PlutoTV-All",
-      "url": "https://jmp2.uk/plu-61b33085897b9d000702b72e.m3u8"
-    },
-    {
-      "id": "5ced7d5df64be98e07ed47b6",
-      "name": "NFL Channel",
-      "logo": "https://images.pluto.tv/channels/5ced7d5df64be98e07ed47b6/colorLogoPNG.png",
-      "group": "PlutoTV-All",
-      "url": "https://jmp2.uk/plu-5ced7d5df64be98e07ed47b6.m3u8"
-    },
-    {
-      "id": "6627621d56fc840008e47c90",
-      "name": "Tennis Channel",
-      "logo": "https://images.pluto.tv/channels/6627621d56fc840008e47c90/colorLogoPNG_1756973184696.png",
-      "group": "PlutoTV-All",
-      "url": "https://jmp2.uk/plu-6627621d56fc840008e47c90.m3u8"
-    },
-    {
-      "id": "5a74b8e1e22a61737979c6bf",
-      "name": "FOX Sports",
-      "logo": "https://images.pluto.tv/channels/5a74b8e1e22a61737979c6bf/colorLogoPNG.png",
-      "group": "PlutoTV-All",
-      "url": "https://jmp2.uk/plu-5a74b8e1e22a61737979c6bf.m3u8"
+      "url": "https://jmp2.uk/plu-65b14aae0cb1a100087a216e.m3u8"
     },
     {
       "id": "65ea8b928145cb0008509426",
@@ -624,67 +386,11 @@
       "url": "https://jmp2.uk/plu-65ea8b928145cb0008509426.m3u8"
     },
     {
-      "id": "66ed3eb27358ce000830df49",
-      "name": "UFC",
-      "logo": "https://images.pluto.tv/channels/66ed3eb27358ce000830df49/colorLogoPNG.png",
+      "id": "5a74b8e1e22a61737979c6bf",
+      "name": "FOX Sports",
+      "logo": "https://images.pluto.tv/channels/5a74b8e1e22a61737979c6bf/colorLogoPNG.png",
       "group": "PlutoTV-All",
-      "url": "https://jmp2.uk/plu-66ed3eb27358ce000830df49.m3u8"
-    },
-    {
-      "id": "647f07e74cfc2c0008a2e557",
-      "name": "DAZN TV",
-      "logo": "https://images.pluto.tv/channels/647f07e74cfc2c0008a2e557/colorLogoPNG.png",
-      "group": "PlutoTV-All",
-      "url": "https://jmp2.uk/plu-647f07e74cfc2c0008a2e557.m3u8"
-    },
-    {
-      "id": "677d9adfa9a51b0008497fa0",
-      "name": "UFC",
-      "logo": "https://images.pluto.tv/channels/677d9adfa9a51b0008497fa0/colorLogoPNG.png",
-      "group": "PlutoTV-All",
-      "url": "https://jmp2.uk/plu-677d9adfa9a51b0008497fa0.m3u8"
-    },
-    {
-      "id": "6972546cc62833833a187f50",
-      "name": "Willow Sports",
-      "logo": "https://images.pluto.tv/channels/6972546cc62833833a187f50/colorLogoPNG_1770648792020.png",
-      "group": "PlutoTV-All",
-      "url": "https://jmp2.uk/plu-6972546cc62833833a187f50.m3u8"
-    },
-    {
-      "id": "65b9268fc798e800085add89",
-      "name": "SPIEGEL TV Konflikte",
-      "logo": "https://images.pluto.tv/channels/65b9268fc798e800085add89/colorLogoPNG.png",
-      "group": "PlutoTV-All",
-      "url": "https://jmp2.uk/plu-65b9268fc798e800085add89.m3u8"
-    },
-    {
-      "id": "64df7ab4dfa32400083c517b",
-      "name": "DAZN Combat",
-      "logo": "https://images.pluto.tv/channels/64df7ab4dfa32400083c517b/colorLogoPNG.png",
-      "group": "PlutoTV-All",
-      "url": "https://jmp2.uk/plu-64df7ab4dfa32400083c517b.m3u8"
-    },
-    {
-      "id": "65c69ee3d77d450008c80438",
-      "name": "F1 Channel",
-      "logo": "https://images.pluto.tv/channels/65c69ee3d77d450008c80438/colorLogoPNG.png",
-      "group": "PlutoTV-All",
-      "url": "https://jmp2.uk/plu-65c69ee3d77d450008c80438.m3u8"
-    },
-    {
-      "id": "5e7cb84a172a0f0007da69e4",
-      "name": "Red Bull TV",
-      "logo": "https://images.pluto.tv/channels/5e7cb84a172a0f0007da69e4/colorLogoPNG.png",
-      "group": "PlutoTV-All",
-      "url": "https://jmp2.uk/plu-5e7cb84a172a0f0007da69e4.m3u8"
-    },
-    {
-      "id": "66f137cb483d460008ece053",
-      "name": "Rugby Pass TV",
-      "logo": "https://images.pluto.tv/channels/66f137cb483d460008ece053/colorLogoPNG.png",
-      "group": "PlutoTV-All",
-      "url": "https://jmp2.uk/plu-66f137cb483d460008ece053.m3u8"
+      "url": "https://jmp2.uk/plu-5a74b8e1e22a61737979c6bf.m3u8"
     },
     {
       "id": "64df7a9a44fe100009b6ac5a",
@@ -701,18 +407,18 @@
       "url": "https://jmp2.uk/plu-649b6898f2ec0000081a9460.m3u8"
     },
     {
-      "id": "67a52cd4ec91870008a62164",
-      "name": "UFC",
-      "logo": "https://images.pluto.tv/channels/67a52cd4ec91870008a62164/colorLogoPNG_1772478524925.png",
+      "id": "64df7ab4dfa32400083c517b",
+      "name": "DAZN Combat",
+      "logo": "https://images.pluto.tv/channels/64df7ab4dfa32400083c517b/colorLogoPNG.png",
       "group": "PlutoTV-All",
-      "url": "https://jmp2.uk/plu-67a52cd4ec91870008a62164.m3u8"
+      "url": "https://jmp2.uk/plu-64df7ab4dfa32400083c517b.m3u8"
     },
     {
-      "id": "6870c9333ffa5e0c914e9205",
-      "name": "Tennis Channel",
-      "logo": "https://images.pluto.tv/channels/6870c9333ffa5e0c914e9205/colorLogoPNG_1756709434849.png",
+      "id": "6549306c83595c000815a696",
+      "name": "NBC Sports NOW",
+      "logo": "https://images.pluto.tv/channels/6549306c83595c000815a696/colorLogoPNG.png",
       "group": "PlutoTV-All",
-      "url": "https://jmp2.uk/plu-6870c9333ffa5e0c914e9205.m3u8"
+      "url": "https://jmp2.uk/plu-6549306c83595c000815a696.m3u8"
     },
     {
       "id": "64d626ac9b414d000820e2fc",
@@ -722,74 +428,11 @@
       "url": "https://jmp2.uk/plu-64d626ac9b414d000820e2fc.m3u8"
     },
     {
-      "id": "ICCplus.us@SD",
-      "name": "ICC Plus (1080p)",
-      "logo": "",
-      "group": "Wnslive",
-      "url": "https://icchls.wns.live/hls/stream.m3u8"
-    },
-    {
-      "id": "67921b78b83355184c667770",
-      "name": "UFC",
-      "logo": "https://images.pluto.tv/channels/67921b78b83355184c667770/colorLogoPNG.png",
-      "group": "PlutoTV-All",
-      "url": "https://jmp2.uk/plu-67921b78b83355184c667770.m3u8"
-    },
-    {
-      "id": "679203d4bc03978b9b4b79a6",
-      "name": "UFC",
-      "logo": "https://images.pluto.tv/channels/679203d4bc03978b9b4b79a6/colorLogoPNG.png",
-      "group": "PlutoTV-All",
-      "url": "https://jmp2.uk/plu-679203d4bc03978b9b4b79a6.m3u8"
-    },
-    {
-      "id": "67813f893886aa863497733d",
-      "name": "Red Bull TV",
-      "logo": "https://images.pluto.tv/channels/67813f893886aa863497733d/colorLogoPNG.png",
-      "group": "PlutoTV-All",
-      "url": "https://jmp2.uk/plu-67813f893886aa863497733d.m3u8"
-    },
-    {
-      "id": "65e9b676332fec00085b300e",
-      "name": "Glory Kickboxing",
-      "logo": "https://images.pluto.tv/channels/65e9b676332fec00085b300e/colorLogoPNG.png",
-      "group": "PlutoTV-All",
-      "url": "https://jmp2.uk/plu-65e9b676332fec00085b300e.m3u8"
-    },
-    {
-      "id": "6792066f3de7c8cf941e7ce3",
-      "name": "UFC",
-      "logo": "https://images.pluto.tv/channels/6792066f3de7c8cf941e7ce3/colorLogoPNG.png",
-      "group": "PlutoTV-All",
-      "url": "https://jmp2.uk/plu-6792066f3de7c8cf941e7ce3.m3u8"
-    },
-    {
       "id": "648056f0f77b61000828f1ba",
       "name": "DAZN Ringside",
       "logo": "https://images.pluto.tv/channels/648056f0f77b61000828f1ba/colorLogoPNG_1772448393798.png",
       "group": "PlutoTV-All",
       "url": "https://jmp2.uk/plu-648056f0f77b61000828f1ba.m3u8"
-    },
-    {
-      "id": "65e9b6b58145cb00084d24ee",
-      "name": "Glory Kickboxing",
-      "logo": "https://images.pluto.tv/channels/65e9b6b58145cb00084d24ee/colorLogoPNG.png",
-      "group": "PlutoTV-All",
-      "url": "https://jmp2.uk/plu-65e9b6b58145cb00084d24ee.m3u8"
-    },
-    {
-      "id": "6870c97b759366af055fe371",
-      "name": "Tennis Channel",
-      "logo": "https://images.pluto.tv/channels/6870c97b759366af055fe371/colorLogoPNG_1756969580463.png",
-      "group": "PlutoTV-All",
-      "url": "https://jmp2.uk/plu-6870c97b759366af055fe371.m3u8"
-    },
-    {
-      "id": "679205a13de7c8cf941e7857",
-      "name": "UFC",
-      "logo": "https://images.pluto.tv/channels/679205a13de7c8cf941e7857/colorLogoPNG.png",
-      "group": "PlutoTV-All",
-      "url": "https://jmp2.uk/plu-679205a13de7c8cf941e7857.m3u8"
     },
     {
       "id": "64805755536e0c0008a19fa1",
@@ -799,39 +442,25 @@
       "url": "https://jmp2.uk/plu-64805755536e0c0008a19fa1.m3u8"
     },
     {
-      "id": "65e9b6498b24c8000806b982",
-      "name": "Glory Kickboxing",
-      "logo": "https://images.pluto.tv/channels/65e9b6498b24c8000806b982/colorLogoPNG.png",
+      "id": "647f07e74cfc2c0008a2e557",
+      "name": "DAZN TV",
+      "logo": "https://images.pluto.tv/channels/647f07e74cfc2c0008a2e557/colorLogoPNG.png",
       "group": "PlutoTV-All",
-      "url": "https://jmp2.uk/plu-65e9b6498b24c8000806b982.m3u8"
+      "url": "https://jmp2.uk/plu-647f07e74cfc2c0008a2e557.m3u8"
     },
     {
-      "id": "6870c9ca759366af055fe891",
-      "name": "Tennis Channel",
-      "logo": "https://images.pluto.tv/channels/6870c9ca759366af055fe891/colorLogoPNG_1756971817950.png",
+      "id": "64eca23c9c1e390008524ae6",
+      "name": "Nordisk krim fra Viaplay",
+      "logo": "https://images.pluto.tv/channels/64eca23c9c1e390008524ae6/colorLogoPNG.png",
       "group": "PlutoTV-All",
-      "url": "https://jmp2.uk/plu-6870c9ca759366af055fe891.m3u8"
+      "url": "https://jmp2.uk/plu-64eca23c9c1e390008524ae6.m3u8"
     },
     {
-      "id": "6792044b680721c77c5b9ba2",
-      "name": "UFC",
-      "logo": "https://images.pluto.tv/channels/6792044b680721c77c5b9ba2/colorLogoPNG.png",
+      "id": "6972546cc62833833a187f50",
+      "name": "Willow Sports",
+      "logo": "https://images.pluto.tv/channels/6972546cc62833833a187f50/colorLogoPNG_1770648792020.png",
       "group": "PlutoTV-All",
-      "url": "https://jmp2.uk/plu-6792044b680721c77c5b9ba2.m3u8"
-    },
-    {
-      "id": "643054b1fc3be59477853717-65e0c8c6d899afe817b9d224",
-      "name": "Cricket Gold",
-      "logo": "https://provider-static.plex.tv/epg/cms/production/d041b4b4-65f0-4862-8d26-a0be4c984e2e/Cricket_Gold_Logo_1-1RDX.png",
-      "group": "Plex-All",
-      "url": "https://jmp2.uk/plex-643054b1fc3be59477853717-65e0c8c6d899afe817b9d224.m3u8"
-    },
-    {
-      "id": "697140a85d851f5e69414688-65e0c8c6d899afe817b9d224",
-      "name": "Cricket Gold",
-      "logo": "https://provider-static.plex.tv/epg/cms/production/d041b4b4-65f0-4862-8d26-a0be4c984e2e/Cricket_Gold_Logo_1-1RDX.png",
-      "group": "Plex-All",
-      "url": "https://jmp2.uk/plex-697140a85d851f5e69414688-65e0c8c6d899afe817b9d224.m3u8"
+      "url": "https://jmp2.uk/plu-6972546cc62833833a187f50.m3u8"
     },
     {
       "id": "64805922536e0c0008a1a1e6",
@@ -841,244 +470,6 @@
       "url": "https://jmp2.uk/plu-64805922536e0c0008a1a1e6.m3u8"
     },
     {
-      "id": "608049aefa2b8ae93c2c3a63-65e0c8c6d899afe817b9d224",
-      "name": "Cricket Gold",
-      "logo": "https://provider-static.plex.tv/epg/cms/production/d041b4b4-65f0-4862-8d26-a0be4c984e2e/Cricket_Gold_Logo_1-1RDX.png",
-      "group": "Plex-All",
-      "url": "https://jmp2.uk/plex-608049aefa2b8ae93c2c3a63-65e0c8c6d899afe817b9d224.m3u8"
-    },
-    {
-      "id": "64305451fc3be5947773c339-65e0c8c6d899afe817b9d224",
-      "name": "Cricket Gold",
-      "logo": "https://provider-static.plex.tv/epg/cms/production/d041b4b4-65f0-4862-8d26-a0be4c984e2e/Cricket_Gold_Logo_1-1RDX.png",
-      "group": "Plex-All",
-      "url": "https://jmp2.uk/plex-64305451fc3be5947773c339-65e0c8c6d899afe817b9d224.m3u8"
-    },
-    {
-      "id": "5e20b730f2f8d5003d739db7-65e0c8c6d899afe817b9d224",
-      "name": "Cricket Gold",
-      "logo": "https://provider-static.plex.tv/epg/cms/production/d041b4b4-65f0-4862-8d26-a0be4c984e2e/Cricket_Gold_Logo_1-1RDX.png",
-      "group": "Plex-All",
-      "url": "https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-65e0c8c6d899afe817b9d224.m3u8"
-    },
-    {
-      "id": "647f8d22a2fc3fadb4721685-65e0c8c6d899afe817b9d224",
-      "name": "Cricket Gold",
-      "logo": "https://provider-static.plex.tv/epg/cms/production/d041b4b4-65f0-4862-8d26-a0be4c984e2e/Cricket_Gold_Logo_1-1RDX.png",
-      "group": "Plex-All",
-      "url": "https://jmp2.uk/plex-647f8d22a2fc3fadb4721685-65e0c8c6d899afe817b9d224.m3u8"
-    },
-    {
-      "id": "6430aa45fc3be5947780904e-65e0c8c6d899afe817b9d224",
-      "name": "Cricket Gold",
-      "logo": "https://provider-static.plex.tv/epg/cms/production/d041b4b4-65f0-4862-8d26-a0be4c984e2e/Cricket_Gold_Logo_1-1RDX.png",
-      "group": "Plex-All",
-      "url": "https://jmp2.uk/plex-6430aa45fc3be5947780904e-65e0c8c6d899afe817b9d224.m3u8"
-    },
-    {
-      "id": "5e20b730f2f8d5003d739db7-63f914bffe2c3d32e1a7929f",
-      "name": "GLORY Kickboxing",
-      "logo": "https://provider-static.plex.tv/epg/cms/production/24dfa4e0-5cba-4f17-afce-f325404ba01a/GLORY_Logo_Light_Nicholas_Olsen.png",
-      "group": "Plex-All",
-      "url": "https://jmp2.uk/plex-5e20b730f2f8d5003d739db7-63f914bffe2c3d32e1a7929f.m3u8"
-    },
-    {
-      "id": "697140a85d851f5e69414688-63f914bffe2c3d32e1a7929f",
-      "name": "GLORY Kickboxing",
-      "logo": "https://provider-static.plex.tv/epg/cms/production/24dfa4e0-5cba-4f17-afce-f325404ba01a/GLORY_Logo_Light_Nicholas_Olsen.png",
-      "group": "Plex-All",
-      "url": "https://jmp2.uk/plex-697140a85d851f5e69414688-63f914bffe2c3d32e1a7929f.m3u8"
-    },
-    {
-      "id": "608049aefa2b8ae93c2c3a63-63f914bffe2c3d32e1a7929f",
-      "name": "GLORY Kickboxing",
-      "logo": "https://provider-static.plex.tv/epg/cms/production/24dfa4e0-5cba-4f17-afce-f325404ba01a/GLORY_Logo_Light_Nicholas_Olsen.png",
-      "group": "Plex-All",
-      "url": "https://jmp2.uk/plex-608049aefa2b8ae93c2c3a63-63f914bffe2c3d32e1a7929f.m3u8"
-    },
-    {
-      "id": "643054b1fc3be59477853717-63f914bffe2c3d32e1a7929f",
-      "name": "GLORY Kickboxing",
-      "logo": "https://provider-static.plex.tv/epg/cms/production/24dfa4e0-5cba-4f17-afce-f325404ba01a/GLORY_Logo_Light_Nicholas_Olsen.png",
-      "group": "Plex-All",
-      "url": "https://jmp2.uk/plex-643054b1fc3be59477853717-63f914bffe2c3d32e1a7929f.m3u8"
-    },
-    {
-      "id": "647f8d22a2fc3fadb4721685-63f914bffe2c3d32e1a7929f",
-      "name": "GLORY Kickboxing",
-      "logo": "https://provider-static.plex.tv/epg/cms/production/24dfa4e0-5cba-4f17-afce-f325404ba01a/GLORY_Logo_Light_Nicholas_Olsen.png",
-      "group": "Plex-All",
-      "url": "https://jmp2.uk/plex-647f8d22a2fc3fadb4721685-63f914bffe2c3d32e1a7929f.m3u8"
-    },
-    {
-      "id": "6430aa45fc3be5947780904e-63f914bffe2c3d32e1a7929f",
-      "name": "GLORY Kickboxing",
-      "logo": "https://provider-static.plex.tv/epg/cms/production/24dfa4e0-5cba-4f17-afce-f325404ba01a/GLORY_Logo_Light_Nicholas_Olsen.png",
-      "group": "Plex-All",
-      "url": "https://jmp2.uk/plex-6430aa45fc3be5947780904e-63f914bffe2c3d32e1a7929f.m3u8"
-    },
-    {
-      "id": "64305451fc3be5947773c339-63f914bffe2c3d32e1a7929f",
-      "name": "GLORY Kickboxing",
-      "logo": "https://provider-static.plex.tv/epg/cms/production/24dfa4e0-5cba-4f17-afce-f325404ba01a/GLORY_Logo_Light_Nicholas_Olsen.png",
-      "group": "Plex-All",
-      "url": "https://jmp2.uk/plex-64305451fc3be5947773c339-63f914bffe2c3d32e1a7929f.m3u8"
-    },
-    {
-      "id": "RugbyPass_TV",
-      "name": "RugbyPass TV",
-      "logo": "https://dki01q1l7yn3y.cloudfront.net/thumbnails-platform-prod/assets/cs::content::channels/0-2048/1872-LG-960x540_v3.jpg",
-      "group": "LGTV-Schedule",
-      "url": "https://wurlworldrugby.global.transmit.live/hls/688cf16a14352f4b8d1bd9ab/v1/world_rugby_rugbypasstv_1/lg_us/latest/main/hls/playlist.m3u8"
-    },
-    {
-      "id": "Strongman_Champions_League",
-      "name": "Strongman Champions League",
-      "logo": "https://img.platform.wurl.dev/channel/1102/lg/129bb3/LG-400x225_v1.png",
-      "group": "LGTV-Schedule",
-      "url": "https://wurlrightsbooster.global.transmit.live/hls/6823bc03ec440b38950aff0b/playlist.m3u8"
-    },
-    {
-      "id": "NBATV.us@SD",
-      "name": "NBA TV",
-      "logo": "",
-      "group": "Moveonjoy",
-      "url": "http://212.102.60.231/NBA_TV/index.m3u8"
-    },
-    {
-      "id": "2d9aed2049f3c762acbed39bf6b9cc9f",
-      "name": "NASCAR",
-      "logo": "https://images.sr.roku.com/idType/roku-trc/context/trc/id/2d9aed2049f3c762acbed39bf6b9cc9f/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1753897760102_NASCAR_HUD_hex_efefef_260x147_Roku.png",
-      "group": "Roku-All",
-      "url": "https://jmp2.uk/rok-2d9aed2049f3c762acbed39bf6b9cc9f.m3u8"
-    },
-    {
-      "id": "413152",
-      "name": "Bein Sports Xtra",
-      "logo": "https://teamhandballnews.com/wp-content/uploads/2020/01/beIN-SPORTS-XTRA_LOGO-1024x127.png",
-      "group": "UDPTV",
-      "url": "https://amg01334-beinsportsllc-beinxtra-localnow-kcy6r.amagi.tv/playlist.m3u8"
-    },
-    {
-      "id": "bc932f13c31e542db6e3e6247e7131bc",
-      "name": "beIN SPORTS Xtra",
-      "logo": "https://images.sr.roku.com/idType/roku-trc/context/trc/id/bc932f13c31e542db6e3e6247e7131bc/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1652896913644_beIN-SPORTS-XTRA_LOGO_ROKU_HUD_260x147%255B1%255D.png",
-      "group": "Roku-All",
-      "url": "https://jmp2.uk/rok-bc932f13c31e542db6e3e6247e7131bc.m3u8"
-    },
-    {
-      "id": "c5e8a74546771de365652cd053f73351",
-      "name": "Red Bull TV",
-      "logo": "https://images.sr.roku.com/idType/roku-trc/context/trc/id/c5e8a74546771de365652cd053f73351/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1747061731258_260x147_hud_rbtv_logo.png",
-      "group": "Roku-All",
-      "url": "https://jmp2.uk/rok-c5e8a74546771de365652cd053f73351.m3u8"
-    },
-    {
-      "id": "909b135136a1567eaf3f65fb64988323",
-      "name": "beIN SPORTS Xtra en Español",
-      "logo": "https://images.sr.roku.com/idType/roku-trc/context/trc/id/909b135136a1567eaf3f65fb64988323/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1652921815769_beINSPORTS-XTRA-ESPANOL_LOGO_ROKU_HUD_TOP-ALIGNED_260x147.png",
-      "group": "Roku-All",
-      "url": "https://jmp2.uk/rok-909b135136a1567eaf3f65fb64988323.m3u8"
-    },
-    {
-      "id": "b6a492b04d7d534fa0e9e69380382d02",
-      "name": "DAZN Ringside",
-      "logo": "https://images.sr.roku.com/idType/roku-trc/context/trc/id/b6a492b04d7d534fa0e9e69380382d02/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1694819506729_DAZN_TV_Ringside_Channel_HUD_Logo.png",
-      "group": "Roku-All",
-      "url": "https://jmp2.uk/rok-b6a492b04d7d534fa0e9e69380382d02.m3u8"
-    },
-    {
-      "id": "a90a91570ce0536cbb22b591ad7e0da2",
-      "name": "NBC Sports NOW",
-      "logo": "https://images.sr.roku.com/idType/roku-trc/context/trc/id/a90a91570ce0536cbb22b591ad7e0da2/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1736299139819_nbc-sports-now-fclogo-72-dpi-260-x-147-260-147-roku-hud-logo-center-align-efefef-w-trans-bkgd-1.png",
-      "group": "Roku-All",
-      "url": "https://jmp2.uk/rok-a90a91570ce0536cbb22b591ad7e0da2.m3u8"
-    },
-    {
-      "id": "0fc01f1136055d89bae495ba92eff445",
-      "name": "FOX Sports",
-      "logo": "https://images.sr.roku.com/idType/roku-trc/context/trc/id/0fc01f1136055d89bae495ba92eff445/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1697817997944_FOXsports_Logo-monchromtic.png",
-      "group": "Roku-All",
-      "url": "https://jmp2.uk/rok-0fc01f1136055d89bae495ba92eff445.m3u8"
-    },
-    {
-      "id": "e08aa3af93f95c9db062ce237e90f6d1",
-      "name": "GolfPass",
-      "logo": "https://images.sr.roku.com/idType/roku-trc/context/trc/id/e08aa3af93f95c9db062ce237e90f6d1/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1764960071124_golfpass-fclogo-72-dpi-260-x-147-260-147-roku-hud-logo-center-align-efefef-w-trans-bkgd-1.png",
-      "group": "Roku-All",
-      "url": "https://jmp2.uk/rok-e08aa3af93f95c9db062ce237e90f6d1.m3u8"
-    },
-    {
-      "id": "613759",
-      "name": "beIN Sports XTRA En Español",
-      "logo": "https://canvas-lb.tubitv.com/opts/y4jAUpeHq4ELHg==/8968101d-cc65-48c7-a102-0a6a46ca55db/CHgQeDoFMS4xLjlAAQ==",
-      "group": "tubi_playlist",
-      "url": "https://live-manifest.production-public.tubi.io/live/6cd31e43-d255-4ab4-b065-7f28bd541047/playlist.m3u8"
-    },
-    {
-      "id": "UFC",
-      "name": "UFC",
-      "logo": "https://d1biytugnv36sr.cloudfront.net/resize?width=400&height=225&url=https://images.frequency.com/video/7427804245639858827/solid/rectangle/w1920_h1080/xt555ki8apmv1q520rnzvgx3z.jpg",
-      "group": "LGTV-Schedule",
-      "url": "https://linear-893.frequency.stream/dist/lg-us/893/hls/master/playlist.m3u8"
-    },
-    {
-      "id": "613765",
-      "name": "MLB",
-      "logo": "https://canvas-lb.tubitv.com/opts/6tImLu773-5D_g==/652d017f-fb2a-460e-a528-ee54cc6ed872/CHgQeDoFMS4xLjlAAQ==",
-      "group": "tubi_playlist",
-      "url": "https://live-manifest.production-public.tubi.io/live/94ef022e-59ad-486a-81bb-f817613e3df1/playlist.m3u8"
-    },
-    {
-      "id": "400000116",
-      "name": "The NBA Channel",
-      "logo": "https://canvas-lb.tubitv.com/opts/VGJpYUttk1EYXg==/7d258341-afc7-4022-acd4-ce330c6db573/CHgQeDoFMS4xLjlAAQ==",
-      "group": "tubi_playlist",
-      "url": "https://live-manifest.production-public.tubi.io/live/553b8d5e-fd2a-4a61-bdfa-73b34c299d75/playlist.m3u8"
-    },
-    {
-      "id": "400000106",
-      "name": "UFC",
-      "logo": "https://canvas-lb.tubitv.com/opts/SImeAOgOma8YLQ==/a2adde61-ad0b-49bd-bf32-ec660546a380/CHgQeDoFMS4xLjlAAQ==",
-      "group": "tubi_playlist",
-      "url": "https://live-manifest.production-public.tubi.io/live/dd6d627f-f0f8-48bb-b627-7f7c4fceec37/playlist.m3u8"
-    },
-    {
-      "id": "StrongmanChampionsLeague.pl",
-      "name": "Strongman Champions League",
-      "logo": "https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/30ccc088-dca7-4458-ad5a-328fef06e1ca-width200-quality90.png",
-      "group": "hilaytv",
-      "url": "https://rightsboosterltd-scl-1-nl.samsung.wurl.tv/playlist.m3u8"
-    },
-    {
-      "id": "TennisCh.mv",
-      "name": "Tennis Channel",
-      "logo": "https://8upload.com/image/67da29e311eb0/51-tennisch.png",
-      "group": "hilaytv",
-      "url": "https://tennischannel-int-samsunguk.amagi.tv/playlist.m3u8"
-    },
-    {
-      "id": "613761",
-      "name": "NFL Channel",
-      "logo": "https://canvas-lb.tubitv.com/opts/MWTjzbz0C0Irrw==/7bffc557-8e66-4b08-b279-55ece734e19f/CHgQeDoFMS4xLjlAAQ==",
-      "group": "tubi_playlist",
-      "url": "https://live-manifest.production-public.tubi.io/live/79123cfa-756c-4d5e-9f66-26755a4cd5c8/playlist.m3u8"
-    },
-    {
-      "id": "400000024",
-      "name": "DAZN Ringside",
-      "logo": "https://canvas-lb.tubitv.com/opts/P5khntngIx0W_w==/aa1f99f5-7a57-44a1-b031-b3a27eceab13/CHgQeDoFMS4xLjlAAQ==",
-      "group": "tubi_playlist",
-      "url": "https://live-manifest.production-public.tubi.io/live/c92d028f-fd29-4925-9c4d-271bfe4262ec/playlist.m3u8"
-    },
-    {
-      "id": "400000008",
-      "name": "NHL",
-      "logo": "https://canvas-lb.tubitv.com/opts/8h7HYVpDz2amhw==/085bca04-c806-4a7f-bb0c-d38fe352f3e3/CHgQeDoFMS4xLjlAAQ==",
-      "group": "tubi_playlist",
-      "url": "https://live-manifest.production-public.tubi.io/live/2cfb4368-6c7e-4075-bc1f-69f7141a8012/playlist.m3u8"
-    },
-    {
       "id": "ESPN.us",
       "name": "ESPN US",
       "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/espn-us.png",
@@ -1086,46 +477,11 @@
       "url": "http://41.205.93.154/ESPN/index.m3u8"
     },
     {
-      "id": "613695",
-      "name": "Fox Sports En Español",
-      "logo": "https://canvas-lb.tubitv.com/opts/Rt5VK8q8c6pWvw==/c2e45f1a-4b72-41fa-ac6c-4e402ca4d4f6/CHgQeDoFMS4xLjlAAQ==",
-      "group": "tubi_playlist",
-      "url": "https://live-manifest.production-public.tubi.io/live/d906efca-1302-4e29-b0d9-9a1d7a305d69/playlist.m3u8"
-    },
-    {
-      "id": "Gol.TV.USA.us",
-      "name": "GOL TV",
-      "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/united-states/gol-tv-us.png",
+      "id": "beIN_SPORTS2_DIGITAL_Mono_AR.bein",
+      "name": "BEIN SPORT 2",
+      "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/world-middle-east/bein-sports/bein-sports-2-english-hz-mea.png",
       "group": "hilaytv",
-      "url": "http://23.237.104.106:8080/USA_GOLTV/index.m3u8"
-    },
-    {
-      "id": "The.Tennis.Channel.us",
-      "name": "TENNIS CHANNEL",
-      "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/united-states/tennis-channel-us.png",
-      "group": "hilaytv",
-      "url": "http://23.237.104.106:8080/USA_TENNIS/index.m3u8"
-    },
-    {
-      "id": "NBC.Sports.us",
-      "name": "NBC Sports US",
-      "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/united-states/nbc-sports-us.png",
-      "group": "hilaytv",
-      "url": "https://d3f4oii5n0oeqi.cloudfront.net/11701/88814624/hls/master.m3u8?ads.xumo_channelId=88814624&ads.xumo_streamId=88814624"
-    },
-    {
-      "id": "400000083",
-      "name": "HBO Boxing",
-      "logo": "https://canvas-lb.tubitv.com/opts/WGHcNsnAV2ZzZQ==/85396ad7-4f62-4df1-a6a6-433b0e027106/CHgQeDoFMS4xLjlAAQ==",
-      "group": "tubi_playlist",
-      "url": "https://live-manifest.production-public.tubi.io/live/9fe78734-1db2-49b4-af7b-3c89f5f256ad/playlist.m3u8"
-    },
-    {
-      "id": "Astro.Cricket.my",
-      "name": "Astro Cricket",
-      "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/malaysia/astro-cricket-my.png",
-      "group": "hilaytv",
-      "url": "https://uxplaylists-portalizer.stevosure123.workers.dev/?c=eyJtb2RlIjoic3RhbGtlciIsInN0YWxrZXJfdXJsIjoiaHR0cDovL3R2LnB1c2g0ay50di9zdGFsa2VyX3BvcnRhbC8iLCJtYWMiOiIwMDoxQTo3OTowNDo0MjpDOSIsInNuIjoiQkJBQUZERTg3NDg1MCIsImRldmljZV9pZDEiOiJEMDlBNDM1Mzk2QUFGRTRBNkQ0NjMyQUQzNDQwOTNEM0M3OTYyNzA0NEI4NUNFNDkyNDFFNjlGRjEwRTE5RkJGIiwiZGV2aWNlX2lkMiI6IkQwOUE0MzUzOTZBQUZFNEE2RDQ2MzJBRDM0NDA5M0QzQzc5NjI3MDQ0Qjg1Q0U0OTI0MUU2OUZGMTBFMTlGQkYiLCJzaWciOiIifQ%3D%3D&id=18458"
+      "url": "https://live20.bozztv.com/akamaissh101/ssh101/vipmixflix/chunks.m3u8"
     },
     {
       "id": "STAR.SPORTS.3.in",
@@ -1135,11 +491,102 @@
       "url": "https://uxplaylists-portalizer.stevosure123.workers.dev/?c=eyJtb2RlIjoic3RhbGtlciIsInN0YWxrZXJfdXJsIjoiaHR0cDovL3R2LnB1c2g0ay50di9zdGFsa2VyX3BvcnRhbC8iLCJtYWMiOiIwMDoxQTo3OTowNDo0MjpDOSIsInNuIjoiQkJBQUZERTg3NDg1MCIsImRldmljZV9pZDEiOiJEMDlBNDM1Mzk2QUFGRTRBNkQ0NjMyQUQzNDQwOTNEM0M3OTYyNzA0NEI4NUNFNDkyNDFFNjlGRjEwRTE5RkJGIiwiZGV2aWNlX2lkMiI6IkQwOUE0MzUzOTZBQUZFNEE2RDQ2MzJBRDM0NDA5M0QzQzc5NjI3MDQ0Qjg1Q0U0OTI0MUU2OUZGMTBFMTlGQkYiLCJzaWciOiIifQ%3D%3D&id=23931"
     },
     {
-      "id": "400000121",
-      "name": "NASCAR",
-      "logo": "https://canvas-lb.tubitv.com/opts/1hBihc5u12jjfA==/7739dd1a-423d-4a56-92c7-d27129356eb0/CHgQeDoFMS4xLjlAAQ==",
-      "group": "tubi_playlist",
-      "url": "https://live-manifest.production-public.tubi.io/live/3404f25c-24bd-4ced-9d72-f2b4d5f63c57/playlist.m3u8"
+      "id": "413152",
+      "name": "Bein Sports Xtra",
+      "logo": "https://teamhandballnews.com/wp-content/uploads/2020/01/beIN-SPORTS-XTRA_LOGO-1024x127.png",
+      "group": "UDPTV",
+      "url": "https://amg01334-beinsportsllc-beinxtra-localnow-kcy6r.amagi.tv/playlist.m3u8"
+    },
+    {
+      "id": "b6a492b04d7d534fa0e9e69380382d02",
+      "name": "DAZN Ringside",
+      "logo": "https://images.sr.roku.com/idType/roku-trc/context/trc/id/b6a492b04d7d534fa0e9e69380382d02/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1694819506729_DAZN_TV_Ringside_Channel_HUD_Logo.png",
+      "group": "Roku-All",
+      "url": "https://jmp2.uk/rok-b6a492b04d7d534fa0e9e69380382d02.m3u8"
+    },
+    {
+      "id": "FanDuel_TV_Extra",
+      "name": "FanDuel TV Extra",
+      "logo": "https://img.platform.wurl.dev/channel/1568/lg/f002dc/LG-960x540_v2.png",
+      "group": "LGTV-Schedule",
+      "url": "https://wurlodstechnologies.global.transmit.live/hls/6908e3768d412b30bd4c9e1e/v1/fanduelgroup_fandueltv_01/lg_us/latest/main/hls/playlist.m3u8"
+    },
+    {
+      "id": "Fubo_Sports",
+      "name": "Fubo Sports",
+      "logo": "https://img.platform.wurl.dev/channel/1358/lg/2b0c5b/LG-400x225_v2.png",
+      "group": "LGTV-Schedule",
+      "url": "https://wurlfubo.global.transmit.live/hls/67f42332d3dd98936978f581/v1/fubotv_fubo_sports_network_1/lg_us/latest/main/hls/playlist.m3u8"
+    },
+    {
+      "id": "Gol.TV.USA.us",
+      "name": "GOL TV",
+      "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/united-states/gol-tv-us.png",
+      "group": "hilaytv",
+      "url": "http://23.237.104.106:8080/USA_GOLTV/index.m3u8"
+    },
+    {
+      "id": "10b859e5e8a1e710680c11dfdfb85c11",
+      "name": "FUEL TV",
+      "logo": "https://images.sr.roku.com/idType/roku-trc/context/trc/id/10b859e5e8a1e710680c11dfdfb85c11/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1769180701803_FUEL_TV_HUD__LOGO_260x147_3_pixel_top_and_bottom_border.png",
+      "group": "Roku-All",
+      "url": "https://jmp2.uk/rok-10b859e5e8a1e710680c11dfdfb85c11.m3u8"
+    },
+    {
+      "id": "0fc01f1136055d89bae495ba92eff445",
+      "name": "FOX Sports",
+      "logo": "https://images.sr.roku.com/idType/roku-trc/context/trc/id/0fc01f1136055d89bae495ba92eff445/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1697817997944_FOXsports_Logo-monchromtic.png",
+      "group": "Roku-All",
+      "url": "https://jmp2.uk/rok-0fc01f1136055d89bae495ba92eff445.m3u8"
+    },
+    {
+      "id": "b4273871759a5631bd536d2214f175e5",
+      "name": "Fubo Sports Network",
+      "logo": "https://images.sr.roku.com/idType/roku-trc/context/trc/id/b4273871759a5631bd536d2214f175e5/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1761774127737_Roku-FSN-Logo-efefef.png",
+      "group": "Roku-All",
+      "url": "https://jmp2.uk/rok-b4273871759a5631bd536d2214f175e5.m3u8"
+    },
+    {
+      "id": "a90a91570ce0536cbb22b591ad7e0da2",
+      "name": "NBC Sports NOW",
+      "logo": "https://images.sr.roku.com/idType/roku-trc/context/trc/id/a90a91570ce0536cbb22b591ad7e0da2/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1736299139819_nbc-sports-now-fclogo-72-dpi-260-x-147-260-147-roku-hud-logo-center-align-efefef-w-trans-bkgd-1.png",
+      "group": "Roku-All",
+      "url": "https://jmp2.uk/rok-a90a91570ce0536cbb22b591ad7e0da2.m3u8"
+    },
+    {
+      "id": "bc932f13c31e542db6e3e6247e7131bc",
+      "name": "beIN SPORTS Xtra",
+      "logo": "https://images.sr.roku.com/idType/roku-trc/context/trc/id/bc932f13c31e542db6e3e6247e7131bc/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1652896913644_beIN-SPORTS-XTRA_LOGO_ROKU_HUD_260x147%255B1%255D.png",
+      "group": "Roku-All",
+      "url": "https://jmp2.uk/rok-bc932f13c31e542db6e3e6247e7131bc.m3u8"
+    },
+    {
+      "id": "Strongman_Champions_League",
+      "name": "Strongman Champions League",
+      "logo": "https://img.platform.wurl.dev/channel/1102/lg/129bb3/LG-400x225_v1.png",
+      "group": "LGTV-Schedule",
+      "url": "https://wurlrightsbooster.global.transmit.live/hls/6823bc03ec440b38950aff0b/playlist.m3u8"
+    },
+    {
+      "id": "StrongmanChampionsLeague.pl",
+      "name": "Strongman Champions League",
+      "logo": "https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/30ccc088-dca7-4458-ad5a-328fef06e1ca-width200-quality90.png",
+      "group": "hilaytv",
+      "url": "https://rightsboosterltd-scl-1-nl.samsung.wurl.tv/playlist.m3u8"
+    },
+    {
+      "id": "909b135136a1567eaf3f65fb64988323",
+      "name": "beIN SPORTS Xtra en Español",
+      "logo": "https://images.sr.roku.com/idType/roku-trc/context/trc/id/909b135136a1567eaf3f65fb64988323/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1652921815769_beINSPORTS-XTRA-ESPANOL_LOGO_ROKU_HUD_TOP-ALIGNED_260x147.png",
+      "group": "Roku-All",
+      "url": "https://jmp2.uk/rok-909b135136a1567eaf3f65fb64988323.m3u8"
+    },
+    {
+      "id": "NBC.Sports.us",
+      "name": "NBC Sports US",
+      "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/united-states/nbc-sports-us.png",
+      "group": "hilaytv",
+      "url": "https://d3f4oii5n0oeqi.cloudfront.net/11701/88814624/hls/master.m3u8?ads.xumo_channelId=88814624&ads.xumo_streamId=88814624"
     }
   ]
 }
